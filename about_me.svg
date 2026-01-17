@@ -65,8 +65,12 @@
         stroke-width: 2;
       }
       
-      .icon {
-        fill: #667eea;
+      .icon-path {
+        fill: none;
+        stroke: #667eea;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
       }
 
       .divider {
@@ -91,26 +95,36 @@
   <text x="30" y="125" class="intro">to master the <tspan class="highlight">MERN stack</tspan>.</text>
 
   <!-- Info Cards Row -->
-  <!-- Current Focus -->
+  <!-- Current Focus - Target/Crosshair icon -->
   <g transform="translate(30, 145)">
     <circle cx="12" cy="15" r="12" class="icon-circle" />
-    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">🎯</text>
+    <circle cx="12" cy="15" r="4" class="icon-path" />
+    <line x1="12" y1="7" x2="12" y2="10" class="icon-path" />
+    <line x1="12" y1="20" x2="12" y2="23" class="icon-path" />
+    <line x1="4" y1="15" x2="7" y2="15" class="icon-path" />
+    <line x1="17" y1="15" x2="20" y2="15" class="icon-path" />
     <text x="32" y="12" class="label">CURRENT FOCUS</text>
     <text x="32" y="28" class="value">React, Node.js, Express &amp; MongoDB</text>
   </g>
 
-  <!-- Philosophy -->
+  <!-- Philosophy - Lightbulb icon -->
   <g transform="translate(30, 190)">
     <circle cx="12" cy="15" r="12" class="icon-circle" />
-    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">💡</text>
+    <path d="M12 8 L12 6" class="icon-path" />
+    <path d="M9 11 C9 9 15 9 15 11 C15 13 14 14 14 16 L10 16 C10 14 9 13 9 11" class="icon-path" />
+    <line x1="10" y1="18" x2="14" y2="18" class="icon-path" />
+    <line x1="10.5" y1="20" x2="13.5" y2="20" class="icon-path" />
     <text x="32" y="12" class="label">PHILOSOPHY</text>
     <text x="32" y="28" class="value">Clean code, real projects, continuous learning</text>
   </g>
 
-  <!-- Mindset -->
+  <!-- Mindset - Arrow/Growth icon -->
   <g transform="translate(30, 235)">
     <circle cx="12" cy="15" r="12" class="icon-circle" />
-    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">🚀</text>
+    <path d="M7 20 L12 10 L17 20" class="icon-path" />
+    <line x1="12" y1="10" x2="12" y2="7" class="icon-path" />
+    <line x1="9" y1="9" x2="12" y2="7" class="icon-path" />
+    <line x1="15" y1="9" x2="12" y2="7" class="icon-path" />
     <text x="32" y="12" class="label">MINDSET</text>
     <text x="32" y="28" class="value">Every project is an opportunity to grow</text>
   </g>
