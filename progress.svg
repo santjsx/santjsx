@@ -12,30 +12,30 @@
     </style>
   </defs>
 
-  <!-- Border - thicker and brighter -->
+  <!-- Border -->
   <rect x="2" y="2" width="596" height="216" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
 
-  <!-- JavaScript -->
-  <text x="30" y="45" class="label">JavaScript</text>
-  <text x="550" y="45" class="percent">75%</text>
+  <!-- HTML & CSS -->
+  <text x="30" y="45" class="label">HTML &amp; CSS</text>
+  <text x="550" y="45" class="percent">85%</text>
   <rect x="30" y="53" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="53" width="390" height="12" class="bar-fill" />
+  <rect x="30" y="53" width="442" height="12" class="bar-fill" />
+
+  <!-- JavaScript -->
+  <text x="30" y="95" class="label">JavaScript</text>
+  <text x="550" y="95" class="percent">70%</text>
+  <rect x="30" y="103" width="520" height="12" class="bar-bg" />
+  <rect x="30" y="103" width="364" height="12" class="bar-fill" />
 
   <!-- React -->
-  <text x="30" y="95" class="label">React</text>
-  <text x="550" y="95" class="percent">60%</text>
-  <rect x="30" y="103" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="103" width="312" height="12" class="bar-fill" />
-
-  <!-- Node.js -->
-  <text x="30" y="145" class="label">Node.js &amp; Express</text>
-  <text x="550" y="145" class="percent">50%</text>
+  <text x="30" y="145" class="label">React (Currently Learning)</text>
+  <text x="550" y="145" class="percent">25%</text>
   <rect x="30" y="153" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="153" width="260" height="12" class="bar-fill" />
+  <rect x="30" y="153" width="130" height="12" class="bar-fill" />
 
-  <!-- MongoDB -->
-  <text x="30" y="195" class="label">MongoDB</text>
-  <text x="550" y="195" class="percent">40%</text>
+  <!-- Node.js & MongoDB -->
+  <text x="30" y="195" class="label">Node.js &amp; MongoDB (Next Up)</text>
+  <text x="550" y="195" class="percent">5%</text>
   <rect x="30" y="203" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="203" width="208" height="12" class="bar-fill" />
+  <rect x="30" y="203" width="26" height="12" class="bar-fill" />
 </svg>
