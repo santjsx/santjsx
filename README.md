@@ -25,7 +25,7 @@
 ## About Me
 
 <div align="center">
-  <img src="about_me.svg" width="100%" alt="About Me" />
+  <img src="about_mars.svg" width="100%" alt="About Me" />
 </div>
 
 <br/>
