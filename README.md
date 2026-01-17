@@ -44,18 +44,7 @@ I'm an **aspiring Full Stack Developer** on a focused journey to master the **ME
   <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mongodb,html,css,git,vscode&perline=9" />
 </div>
 
-<br/>
 
-## Current Focus
-
-```text
-JavaScript Fundamentals       ████████████████████░░░░░  80%
-React Components & Hooks      ███████████████░░░░░░░░░░  60%
-Node.js & APIs                ████████████░░░░░░░░░░░░░  50%
-MongoDB & Mongoose            ████████░░░░░░░░░░░░░░░░░  40%
-```
-
-<br/>
 
 ## Let's Connect
 
