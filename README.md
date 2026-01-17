@@ -12,9 +12,9 @@
 
 <br/>
 
-## About Me
-
-## About Me
+<div align="center">
+  <h3>ABOUT ME</h3>
+</div>
 
 <div align="center">
   <img src="about_section.gif" width="100%" />
@@ -25,7 +25,9 @@
 
 <br/>
 
-## Learning Progress
+<div align="center">
+  <h3>LEARNING PROGRESS</h3>
+</div>
 
 <div align="center">
   <img src="progress.svg" width="100%" alt="Learning Progress" />
@@ -33,15 +35,19 @@
 
 <br/>
 
-## Tech I'm Working With
+<div align="center">
+  <h3>TECH STACK</h3>
+</div>
 
 <div align="center">
   <img src="tech_marquee.svg" width="100%" alt="Tech Stack" />
 </div>
 
+<br/>
 
-
-## Let's Connect
+<div align="center">
+  <h3>LET'S CONNECT</h3>
+</div>
 
 <div align="center">
   <table>
