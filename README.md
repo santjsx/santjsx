@@ -12,22 +12,25 @@
 
 <br/>
 
-<div align="center">
-  <h3>ABOUT ME</h3>
-</div>
+## About Me
 
-<div align="center">
-  <img src="about_section.gif" width="100%" />
-  <br/>
-  <br/>
-  <img src="about.svg" width="100%" alt="About Me Stats" />
-</div>
+<img align="right" src="about_section.gif" width="300" />
+
+> *"The only way to learn a new programming language is by writing programs in it."*
+> — Dennis Ritchie
+
+I'm an **aspiring Full Stack Developer** on a focused journey to master the **MERN stack**.
+
+| | |
+|---|---|
+| **Current Focus** | Deep-diving into React, Node.js, Express & MongoDB |
+| **Philosophy** | Clean code, real projects, continuous learning |
+| **Mindset** | Every project is an opportunity to grow |
+| **Open To** | Collaborations, mentorship & developer connections |
 
 <br/>
 
-<div align="center">
-  <h3>LEARNING PROGRESS</h3>
-</div>
+## Learning Progress
 
 <div align="center">
   <img src="progress.svg" width="100%" alt="Learning Progress" />
@@ -35,19 +38,15 @@
 
 <br/>
 
-<div align="center">
-  <h3>TECH STACK</h3>
-</div>
+## Tech I'm Working With
 
 <div align="center">
   <img src="tech_marquee.svg" width="100%" alt="Tech Stack" />
 </div>
 
-<br/>
 
-<div align="center">
-  <h3>LET'S CONNECT</h3>
-</div>
+
+## Let's Connect
 
 <div align="center">
   <table>
