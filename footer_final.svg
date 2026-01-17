@@ -1,0 +1,127 @@
+<svg width="100%" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Mars Gradients -->
+    <linearGradient id="horizonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c1440e" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ef4444" stop-opacity="1" />
+      <stop offset="100%" stop-color="#c1440e" stop-opacity="0" />
+    </linearGradient>
+    
+    <linearGradient id="marsBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c1440e" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#84cc16" stop-opacity="0.4" /> <!-- Alien Green Beam -->
+      <stop offset="100%" stop-color="#84cc16" stop-opacity="0" />
+    </linearGradient>
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&amp;display=swap');
+      
+      .star {
+        fill: white;
+        animation: twinkle 3s ease-in-out infinite alternate;
+      }
+      
+      .star:nth-child(2n) { animation-delay: 1s; }
+      .star:nth-child(3n) { animation-delay: 2s; }
+      
+      .horizon-glow {
+        fill: none;
+        stroke: url(#horizonGrad);
+        stroke-width: 2;
+        filter: drop-shadow(0 0 8px #ef4444);
+      }
+      
+      .footer-text {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 12px;
+        fill: #fdba74;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+
+      /* UFO Animation */
+      .ufo-hover {
+        animation: hover 4s ease-in-out infinite;
+      }
+
+      @keyframes hover {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      @keyframes twinkle {
+        0% { opacity: 0.2; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1.2); }
+      }
+
+      /* Alien Eyes Blink */
+      .alien-eyes {
+        animation: blink-eyes 4s infinite;
+      }
+      @keyframes blink-eyes {
+        0%, 45%, 55%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+      }
+    </style>
+  </defs>
+
+  <!-- Border - Mars Red/Rust Theme -->
+  <rect x="2" y="2" width="796" height="146" fill="none" stroke="url(#marsBorder)" stroke-width="3" rx="12" />
+
+  <!-- Stars Background -->
+  <g>
+    <circle cx="100" cy="40" r="1.5" class="star" />
+    <circle cx="250" cy="20" r="1" class="star" />
+    <circle cx="500" cy="30" r="1.5" class="star" />
+    <circle cx="700" cy="50" r="1" class="star" />
+    <circle cx="150" cy="80" r="1" class="star" />
+    <circle cx="650" cy="70" r="1.5" class="star" />
+  </g>
+
+  <!-- UFO Group (CENTERED) -->
+  <!-- Parent Group for Positioning -->
+  <g transform="translate(400, 50)">
+    <!-- Child Group for Animation -->
+    <g class="ufo-hover">
+        <!-- Beam -->
+        <path d="M 0 10 L -20 80 L 20 80 Z" fill="url(#beamGrad)" />
+        
+        <!-- Legs -->
+        <line x1="-8" y1="10" x2="-12" y2="18" stroke="#94a3b8" stroke-width="2" />
+        <line x1="8" y1="10" x2="12" y2="18" stroke="#94a3b8" stroke-width="2" />
+        
+        <!-- Body -->
+        <ellipse cx="0" cy="10" rx="20" ry="6" fill="#cbd5e1" />
+        
+        <!-- Alien Pilot (Inside Dome) -->
+        <g transform="translate(0, 8) scale(0.35)">
+            <path d="M -15 0 Q 0 -25 15 0" fill="#84cc16" /> <!-- Head -->
+            <g class="alien-eyes" transform-origin="0 -10">
+              <ellipse cx="-6" cy="-8" rx="4" ry="5" fill="black" transform="rotate(-10)" />
+              <ellipse cx="6" cy="-8" rx="4" ry="5" fill="black" transform="rotate(10)" />
+              <circle cx="-5" cy="-9" r="1.5" fill="white" />
+              <circle cx="7" cy="-9" r="1.5" fill="white" />
+            </g>
+        </g>
+
+        <!-- Dome (Semi-transparent over pilot) -->
+        <path d="M -10 10 A 10 10 0 0 1 10 10" fill="#38bdf8" fill-opacity="0.5" />
+        
+        <!-- Lights -->
+        <circle cx="-12" cy="10" r="1.5" fill="#ef4444" />
+        <circle cx="0" cy="12" r="1.5" fill="#ef4444" />
+        <circle cx="12" cy="10" r="1.5" fill="#ef4444" />
+    </g>
+  </g>
+
+  <!-- Cosmic Horizon Line (Curved) -->
+  <path d="M 50 120 Q 400 60 750 120" class="horizon-glow" />
+  
+  <!-- Footer Text -->
+  <text x="400" y="140" text-anchor="middle" class="footer-text">Made on Mars</text>
+</svg>
