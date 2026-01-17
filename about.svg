@@ -1,84 +1,96 @@
-<svg width="100%" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="280" viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&amp;display=swap');
       
-      .label { 
-        font-family: 'Space Grotesk', sans-serif; 
-        font-size: 13px; 
+      .spec-label { 
+        font-family: 'JetBrains Mono', monospace; 
+        font-size: 11px; 
         fill: #6366f1; 
         font-weight: 700; 
-        text-transform: uppercase; 
-        letter-spacing: 2px; 
+        letter-spacing: 2px;
       }
-      .value { 
-        font-family: 'Space Grotesk', sans-serif; 
-        font-size: 16px; 
+      .spec-value { 
+        font-family: 'JetBrains Mono', monospace; 
+        font-size: 14px; 
         fill: #f8fafc; 
-        font-weight: 400; 
+        font-weight: 300;
       }
-      .quote { 
-        font-family: 'Space Grotesk', sans-serif; 
-        font-size: 18px; 
-        fill: #e2e8f0; 
-        font-style: italic; 
-        font-weight: 300; 
+      .header-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px;
+        fill: #f8fafc;
+        font-weight: 700;
+        letter-spacing: 4px;
       }
-      .author { 
-        font-family: 'Space Grotesk', sans-serif; 
-        font-size: 13px; 
-        fill: #94a3b8; 
-        font-weight: 500; 
-        letter-spacing: 1px;
-      }
-      .grid-line { 
+      .divider { 
         stroke: #334155; 
-        stroke-width: 1; 
-        stroke-dasharray: 4 4;
+        stroke-width: 1;
       }
-      .point {
-        fill: #6366f1;
+      .corner-marker {
+        stroke: #6366f1;
+        stroke-width: 2;
+        fill: none;
+      }
+      .background-pattern {
+        fill: url(#grid);
       }
     </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
   </defs>
 
-  <!-- Border -->
-  <rect x="2" y="2" width="796" height="256" fill="none" stroke="#667eea" stroke-width="3" rx="16" />
+  <!-- Background Layer -->
+  <rect width="800" height="280" class="background-pattern" rx="16" />
+  
+  <!-- Outer Border -->
+  <rect x="2" y="2" width="796" height="276" fill="none" stroke="#334155" stroke-width="1" rx="16" />
+  
+  <!-- Corner Accents -->
+  <path d="M 2 40 L 2 2 L 40 2" class="corner-marker" />
+  <path d="M 760 2 L 798 2 L 798 40" class="corner-marker" />
+  <path d="M 798 240 L 798 278 L 760 278" class="corner-marker" />
+  <path d="M 40 278 L 2 278 L 2 240" class="corner-marker" />
 
-  <!-- Quote Section -->
-  <g transform="translate(400, 50)">
-    <text text-anchor="middle" class="quote">"Knowledge is power. Sharing it is the multiplier."</text>
-    <text y="25" text-anchor="middle" class="author">LEARN • BUILD • GROW</text>
+  <!-- Header Info -->
+  <g transform="translate(60, 45)">
+    <text class="header-title">DEVELOPER PROFILE // VER 2.0</text>
+    <line x1="0" y1="15" x2="680" y2="15" class="divider" />
   </g>
-  
-  <!-- Horizontal Divider -->
-  <line x1="40" y1="100" x2="760" y2="100" class="grid-line" stroke-dasharray="0" opacity="0.5" />
-  
-  <!-- Layout Grid -->
-  <g transform="translate(60, 140)">
-    <!-- Current Focus -->
-    <text class="label">STATUS</text>
-    <text y="25" class="value">Deep-diving into React and Modern Web Architectures</text>
-    
-    <!-- Philosophy -->
-    <g transform="translate(0, 70)">
-      <text class="label">PHILOSOPHY</text>
-      <text y="25" class="value">Clean code is not a goal, it is a professional standard.</text>
-    </g>
-    
-    <!-- Vertical Divider -->
-    <line x1="360" y1="-20" x2="360" y2="90" class="grid-line" />
-    
-    <!-- Right Column -->
-    <g transform="translate(400, 0)">
-      <text class="label">MINDSET</text>
-      <text y="25" class="value">Every bug is an opportunity for deep learning.</text>
+
+  <!-- Data Grid -->
+  <g transform="translate(60, 90)">
+    <!-- Row 1 -->
+    <g>
+      <text class="spec-label">SYSTEM.STATUS</text>
+      <text y="25" class="spec-value">MASTERING MERN STACK ARCHITECTURE</text>
       
-      <g transform="translate(0, 70)">
-        <text class="label">OPEN TO</text>
-        <text y="25" class="value">Collaborations on Innovative Open Source Projects</text>
+      <g transform="translate(360, 0)">
+        <text class="spec-label">CORE.CORE_VALUES</text>
+        <text y="25" class="spec-value">PRECISION / SCALE / MAINTAINABILITY</text>
       </g>
     </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 70)">
+      <text class="spec-label">COGNITIVE.MINDSET</text>
+      <text y="25" class="spec-value">RAPID ITERATION THROUGH HANDS-ON BUILDING</text>
+      
+      <g transform="translate(360, 0)">
+        <text class="spec-label">COLLABORATION.PROTOCOL</text>
+        <text y="25" class="spec-value">OPEN FOR INNOVATIVE OPEN SOURCE WORK</text>
+      </g>
+    </g>
+    
+    <!-- Row 3 - Quote -->
+    <g transform="translate(0, 140)">
+      <text class="spec-label">ROOT.PHILOSOPHY</text>
+      <text y="25" class="spec-value" font-style="italic">"The only way to learn a new language is by writing in it."</text>
+    </g>
   </g>
 
+  <!-- Side Markers -->
+  <circle cx="20" cy="140" r="3" fill="#6366f1" />
+  <circle cx="780" cy="140" r="3" fill="#6366f1" />
 </svg>
