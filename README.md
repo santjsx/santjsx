@@ -14,7 +14,7 @@
 
 ## About Me
 
-<img align="right" src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="300" />
+<img align="right" src="about_section.gif" width="300" />
 
 > *"The only way to learn a new programming language is by writing programs in it."*
 > — Dennis Ritchie
