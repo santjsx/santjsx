@@ -1,0 +1,41 @@
+<svg width="150" height="45" viewBox="0 0 150 45" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;display=swap');
+      
+      .label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        fill: #e2e8f0;
+        font-weight: 600;
+      }
+      
+      .box {
+        fill: #1e293b;
+        stroke: #7f1d1d;
+        stroke-width: 1;
+      }
+      
+      .box:hover {
+        stroke: #ef4444;
+      }
+      
+      .linkedin-text {
+         font-family: 'JetBrains Mono', monospace;
+         font-size: 14px;
+         fill: #ef4444;
+         font-weight: bold;
+      }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="148" height="43" class="box" rx="6" />
+  
+  <!-- LinkedIn Icon (Simulated with Text/Rect for sharpness) -->
+  <g transform="translate(15, 12)">
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="none" stroke="#ef4444" stroke-width="1.5" />
+    <text x="4" y="15" class="linkedin-text">in</text>
+  </g>
+  
+  <text x="45" y="27" class="label">LINKEDIN</text>
+</svg>

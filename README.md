@@ -7,7 +7,11 @@
 <br/>
 
 <div align="center">
-  <img src="contact_mars.svg" width="100%" alt="Contact Me" />
+  <a href="mailto:heysanthoshreddy@gmail.com"><img src="btn_mail_mars.svg" height="45" alt="Mail Me" /></a>
+  &nbsp;
+  <a href="https://linkedin.com/in/"><img src="btn_linkedin_mars.svg" height="45" alt="LinkedIn" /></a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat-square&color=ef4444&label=VIEWS&labelColor=1e293b" height="45" alt="Profile Views" />
 </div>
 
 <br/>
