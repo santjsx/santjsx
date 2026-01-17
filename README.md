@@ -14,19 +14,19 @@
 
 ## About Me
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="280" />
+<img align="right" src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="300" />
 
 > *"The only way to learn a new programming language is by writing programs in it."*
 > — Dennis Ritchie
 
 I'm an **aspiring Full Stack Developer** on a focused journey to master the **MERN stack**.
 
-<table>
-<tr><td>🎯</td><td><b>Current Focus</b></td><td>Deep-diving into React, Node.js, Express & MongoDB</td></tr>
-<tr><td>💡</td><td><b>Philosophy</b></td><td>Clean code, real projects, continuous learning</td></tr>
-<tr><td>🌱</td><td><b>Mindset</b></td><td>Every project is an opportunity to grow</td></tr>
-<tr><td>🤝</td><td><b>Open To</b></td><td>Collaborations, mentorship & developer connections</td></tr>
-</table>
+| | |
+|---|---|
+| **Current Focus** | Deep-diving into React, Node.js, Express & MongoDB |
+| **Philosophy** | Clean code, real projects, continuous learning |
+| **Mindset** | Every project is an opportunity to grow |
+| **Open To** | Collaborations, mentorship & developer connections |
 
 <br/>
 
@@ -49,10 +49,10 @@ I'm an **aspiring Full Stack Developer** on a focused journey to master the **ME
 ## Current Focus
 
 ```text
-📘 JavaScript Fundamentals    ████████████████████░░░░░  80%
-⚛️ React Components & Hooks   ███████████████░░░░░░░░░░  60%
-🌿 Node.js & APIs             ████████████░░░░░░░░░░░░░  50%
-🍃 MongoDB & Mongoose         ████████░░░░░░░░░░░░░░░░░  40%
+JavaScript Fundamentals       ████████████████████░░░░░  80%
+React Components & Hooks      ███████████████░░░░░░░░░░  60%
+Node.js & APIs                ████████████░░░░░░░░░░░░░  50%
+MongoDB & Mongoose            ████████░░░░░░░░░░░░░░░░░  40%
 ```
 
 <br/>
