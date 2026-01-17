@@ -15,7 +15,7 @@
 
 | **SYSTEM CAPABILITIES** | **OPERATIONAL METRICS** |
 | :---: | :---: |
-| <img src="skills.svg" width="400" /> | <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0D1117&count_private=true" width="400" /> |
+| <img src="skills.svg" width="400" /> | <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0D1117" width="400" /> |
 | *Holographic Skill Matrix v1.0* | *Live GitHub Telemetry* |
 
 </div>
