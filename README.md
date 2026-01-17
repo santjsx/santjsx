@@ -41,7 +41,7 @@ I'm an **aspiring Full Stack Developer** on a focused journey to master the **ME
 ## Tech I'm Working With
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mongodb,html,css,git,vscode&perline=9" />
+  <img src="tech_marquee.svg" width="100%" alt="Tech Stack" />
 </div>
 
 
