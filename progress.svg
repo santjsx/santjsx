@@ -1,41 +1,42 @@
-<svg width="100%" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#667eea" />
       <stop offset="100%" stop-color="#764ba2" />
     </linearGradient>
     <style>
-      .label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; fill: #e2e8f0; font-weight: 600; }
-      .percent { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 11px; fill: #94a3b8; }
-      .bar-bg { fill: #1e293b; rx: 4; }
-      .bar-fill { fill: url(#progressGrad); rx: 4; }
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&amp;display=swap');
+      .label { font-family: 'Space Grotesk', sans-serif; font-size: 11px; fill: #e2e8f0; font-weight: 600; }
+      .percent { font-family: 'Space Grotesk', sans-serif; font-size: 9px; fill: #94a3b8; }
+      .bar-bg { fill: #1e293b; rx: 3; }
+      .bar-fill { fill: url(#progressGrad); rx: 3; }
     </style>
   </defs>
 
   <!-- Border -->
-  <rect x="2" y="2" width="596" height="216" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
+  <rect x="1" y="1" width="598" height="148" fill="none" stroke="#667eea" stroke-width="2" rx="8" />
 
   <!-- HTML & CSS -->
-  <text x="30" y="45" class="label">HTML &amp; CSS</text>
-  <text x="550" y="45" class="percent">85%</text>
-  <rect x="30" y="53" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="53" width="442" height="12" class="bar-fill" />
+  <text x="20" y="30" class="label">HTML &amp; CSS</text>
+  <text x="560" y="30" class="percent">85%</text>
+  <rect x="20" y="36" width="540" height="8" class="bar-bg" />
+  <rect x="20" y="36" width="459" height="8" class="bar-fill" />
 
   <!-- JavaScript -->
-  <text x="30" y="95" class="label">JavaScript</text>
-  <text x="550" y="95" class="percent">70%</text>
-  <rect x="30" y="103" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="103" width="364" height="12" class="bar-fill" />
+  <text x="20" y="62" class="label">JavaScript</text>
+  <text x="560" y="62" class="percent">70%</text>
+  <rect x="20" y="68" width="540" height="8" class="bar-bg" />
+  <rect x="20" y="68" width="378" height="8" class="bar-fill" />
 
   <!-- React -->
-  <text x="30" y="145" class="label">React (Currently Learning)</text>
-  <text x="550" y="145" class="percent">25%</text>
-  <rect x="30" y="153" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="153" width="130" height="12" class="bar-fill" />
+  <text x="20" y="94" class="label">React (Currently Learning)</text>
+  <text x="560" y="94" class="percent">25%</text>
+  <rect x="20" y="100" width="540" height="8" class="bar-bg" />
+  <rect x="20" y="100" width="135" height="8" class="bar-fill" />
 
   <!-- Node.js & MongoDB -->
-  <text x="30" y="195" class="label">Node.js &amp; MongoDB (Next Up)</text>
-  <text x="550" y="195" class="percent">5%</text>
-  <rect x="30" y="203" width="520" height="12" class="bar-bg" />
-  <rect x="30" y="203" width="26" height="12" class="bar-fill" />
+  <text x="20" y="126" class="label">Node.js &amp; MongoDB (Next Up)</text>
+  <text x="560" y="126" class="percent">5%</text>
+  <rect x="20" y="132" width="540" height="8" class="bar-bg" />
+  <rect x="20" y="132" width="27" height="8" class="bar-fill" />
 </svg>
