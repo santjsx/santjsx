@@ -26,9 +26,6 @@
 
 <div align="center">
   <img src="about_me.svg" width="100%" alt="About Me" />
-  <br/>
-  <br/>
-  <img src="code_philosophy.svg" width="80%" alt="Code Philosophy" />
 </div>
 
 <br/>
