@@ -5,9 +5,11 @@
 <br/>
 
 <div align="center">
-  <a href="mailto:heysanthoshreddy@gmail.com"><img src="https://img.shields.io/badge/-heysanthoshreddy@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=Linkedin&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat&color=667eea&label=Profile+Views" />
+  <a href="mailto:heysanthoshreddy@gmail.com"><img src="https://img.shields.io/badge/MAIL-heysanthoshreddy-667eea?style=flat-square&logo=gmail&logoColor=white&labelColor=1e293b" /></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LINKEDIN-connect-667eea?style=flat-square&logo=linkedin&logoColor=white&labelColor=1e293b" /></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat-square&color=667eea&label=VIEWS&labelColor=1e293b" />
 </div>
 
 <br/>
