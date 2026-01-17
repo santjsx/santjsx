@@ -1,90 +1,107 @@
-<svg width="100%" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="320" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&amp;family=Inter:wght@200;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;800&amp;display=swap');
       
-      .main-label { 
-        font-family: 'Inter', sans-serif; 
+      .label-tech { 
+        font-family: 'Space Mono', monospace; 
         font-size: 10px; 
-        fill: #6366f1; 
+        fill: #818cf8; 
         font-weight: 700; 
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         text-transform: uppercase;
       }
-      .main-value { 
-        font-family: 'Inter', sans-serif; 
-        font-size: 18px; 
-        fill: #f1f5f9; 
-        font-weight: 200;
-        letter-spacing: 1px;
+      .value-tech { 
+        font-family: 'Syne', sans-serif; 
+        font-size: 16px; 
+        fill: #f8fafc; 
+        font-weight: 400;
       }
-      .quote-text {
-        font-family: 'Cormorant Garamond', serif;
-        font-size: 24px;
-        fill: #e2e8f0;
-        font-style: italic;
-        opacity: 0.9;
+      .circuit-line {
+        stroke: #6366f1;
+        stroke-width: 1;
+        fill: none;
+        opacity: 0.2;
       }
-      .divider {
-        stroke: #334155;
-        stroke-width: 0.5;
+      .circuit-node {
+        fill: #818cf8;
+        animation: glow 3s infinite alternate;
       }
-      .accent-box {
-        fill: #6366f1;
-        opacity: 0.1;
+      @keyframes glow {
+        from { opacity: 0.3; r: 2; }
+        to { opacity: 1; r: 4; }
       }
-      .vertical-tag {
-        font-family: 'Inter', sans-serif;
-        font-size: 9px;
-        fill: #475569;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+      .header-main {
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        fill: #f8fafc;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .status-pulse {
+        fill: #10b981;
+        animation: pulse-green 2s infinite;
+      }
+      @keyframes pulse-green {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
       }
     </style>
   </defs>
 
   <!-- Background Border -->
-  <rect x="2" y="2" width="796" height="296" fill="none" stroke="#667eea" stroke-width="3" rx="16" />
+  <rect x="2" y="2" width="796" height="316" fill="none" stroke="#667eea" stroke-width="3" rx="16" />
 
-  <!-- Background Accent -->
-  <rect x="40" y="40" width="720" height="220" rx="8" class="accent-box" />
-
-  <!-- Top Quote Section (The Editorial Hook) -->
-  <g transform="translate(400, 80)">
-    <text text-anchor="middle" class="quote-text">"Code is poetry written in the architecture of logic."</text>
+  <!-- Circuit Pattern Decorations (Bottom Right) -->
+  <g class="circuit-line">
+    <path d="M 600 316 L 600 280 L 650 250 L 750 250" />
+    <path d="M 650 316 L 650 280 L 700 250 L 700 180 L 750 150" />
+    <circle cx="600" cy="280" r="3" class="circuit-node" />
+    <circle cx="650" cy="250" r="3" class="circuit-node" />
+    <circle cx="750" cy="250" r="3" class="circuit-node" />
+    <circle cx="750" cy="150" r="3" class="circuit-node" />
   </g>
 
-  <!-- Divider -->
-  <line x1="100" y1="110" x2="700" y2="110" class="divider" />
+  <!-- Header -->
+  <g transform="translate(40, 50)">
+    <text class="header-main">NEURAL_PROFILE [IDENT:SANTHOSH]</text>
+    <rect x="0" y="20" width="340" height="2" fill="#6366f1" opacity="0.3" />
+    <circle cx="355" cy="12" r="5" class="status-pulse" />
+    <text x="370" y="15" class="label-tech" fill="#10b981">SYSTEM_ACTIVE</text>
+  </g>
 
-  <!-- Data Grid - Clean Editorial Style -->
-  <g transform="translate(100, 150)">
-    <!-- Column 1 -->
+  <!-- Data Modules -->
+  <g transform="translate(40, 110)">
+    <!-- Info Module 01 -->
     <g>
-      <text class="main-label">Current Endeavor</text>
-      <text y="30" class="main-value">Refining the MERN Stack Ecosystem</text>
-      
-      <g transform="translate(0, 70)">
-        <text class="main-label">Engineering Ethos</text>
-        <text y="30" class="main-value">Minimalism, Precision, Performance</text>
-      </g>
+      <text class="label-tech">01 // CURRENT_TRAJECTORY</text>
+      <text y="30" class="value-tech">Deep immersion in MERN stack architecture and system design.</text>
     </g>
 
-    <!-- Column 2 -->
-    <g transform="translate(350, 0)">
-      <text class="main-label">Learning Protocol</text>
-      <text y="30" class="main-value">Deep Immersion via Rapid Prototyping</text>
-      
-      <g transform="translate(0, 70)">
-        <text class="main-label">Global Access</text>
-        <text y="30" class="main-value">Available for Strategic Collaboration</text>
-      </g>
+    <!-- Info Module 02 -->
+    <g transform="translate(0, 80)">
+      <text class="label-tech">02 // CORE_PRINCIPLES</text>
+      <text y="30" class="value-tech">Clean code is the prerequisite. Innovation is the objective.</text>
+    </g>
+
+    <!-- Info Module 03 (Right Side) -->
+    <g transform="translate(420, 0)">
+      <text class="label-tech">03 // COGNITIVE_PROTOCOL</text>
+      <text y="30" class="value-tech">Learning by dismantling. Building by understanding.</text>
+    </g>
+
+    <!-- Info Module 04 (Right Side) -->
+    <g transform="translate(420, 80)">
+      <text class="label-tech">04 // COLLAB_STATUS</text>
+      <text y="30" class="value-tech">Ready for high-impact open source contributions.</text>
+    </g>
+
+    <!-- Quote Section -->
+    <g transform="translate(0, 160)">
+      <text class="label-tech" opacity="0.5">DIRECTIVE_EXECUTION</text>
+      <text y="30" class="value-tech" font-style="italic">"The only way to learn a new language is by writing in it."</text>
     </g>
   </g>
-
-  <!-- Vertical Tag Decor -->
-  <text x="770" y="150" transform="rotate(90 770 150)" class="vertical-tag">DOCUMENTATION // VOL 01</text>
-  <text x="30" y="150" transform="rotate(-90 30 150)" class="vertical-tag">SANTHOSH.CORE</text>
 
 </svg>
