@@ -14,12 +14,19 @@
 
 ## About Me
 
-I'm an **aspiring Full Stack Developer** on a focused journey to master the MERN stack.
+<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="280" />
 
-- Currently deep-diving into **React**, **Node.js**, **Express**, and **MongoDB**.
-- Passionate about writing clean, maintainable code and building real-world projects.
-- Believer in learning by doing—every project is an opportunity to grow.
-- Open to collaborations, mentorship, and connecting with fellow developers.
+> *"The only way to learn a new programming language is by writing programs in it."*
+> — Dennis Ritchie
+
+I'm an **aspiring Full Stack Developer** on a focused journey to master the **MERN stack**.
+
+<table>
+<tr><td>🎯</td><td><b>Current Focus</b></td><td>Deep-diving into React, Node.js, Express & MongoDB</td></tr>
+<tr><td>💡</td><td><b>Philosophy</b></td><td>Clean code, real projects, continuous learning</td></tr>
+<tr><td>🌱</td><td><b>Mindset</b></td><td>Every project is an opportunity to grow</td></tr>
+<tr><td>🤝</td><td><b>Open To</b></td><td>Collaborations, mentorship & developer connections</td></tr>
+</table>
 
 <br/>
 
