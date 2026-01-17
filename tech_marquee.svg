@@ -16,7 +16,7 @@
   </defs>
   
   <!-- Border -->
-  <rect x="1" y="1" width="798" height="88" fill="none" stroke="#334155" stroke-width="2" rx="12" />
+  <rect x="1" y="1" width="798" height="88" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
   
   <!-- Clip path for marquee area -->
   <clipPath id="marqueeClip">
@@ -31,7 +31,7 @@
         type="translate" 
         from="800 0" 
         to="-800 0" 
-        dur="8s" 
+        dur="12s" 
         repeatCount="indefinite" />
       
       <!-- JavaScript -->
@@ -87,7 +87,7 @@
         type="translate" 
         from="1600 0" 
         to="0 0" 
-        dur="8s" 
+        dur="12s" 
         repeatCount="indefinite" />
       
       <!-- JavaScript -->

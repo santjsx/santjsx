@@ -12,8 +12,8 @@
     </style>
   </defs>
 
-  <!-- Border -->
-  <rect x="1" y="1" width="598" height="218" fill="none" stroke="#334155" stroke-width="2" rx="12" />
+  <!-- Border - thicker and brighter -->
+  <rect x="2" y="2" width="596" height="216" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
 
   <!-- JavaScript -->
   <text x="30" y="45" class="label">JavaScript</text>
