@@ -12,6 +12,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="system_status.svg" width="100%" alt="System Status" />
+</div>
+
+<br/>
+
 ## About Me
 
 <div align="center">
