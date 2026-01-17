@@ -15,7 +15,7 @@
 
 | **SYSTEM CAPABILITIES** | **OPERATIONAL METRICS** |
 | :---: | :---: |
-| <img src="skills.svg" width="400" /> | <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=shades-of-purple&hide_border=true&bg_color=0D1117" width="400" /> |
+| <img src="skills.svg" width="400" /> | <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=tokyonight&cache_seconds=1800" width="400" /> |
 | *Holographic Skill Matrix v1.0* | *Live GitHub Telemetry* |
 
 </div>
@@ -41,7 +41,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=santjsx&theme=shades-of-purple&hide_border=true&background=0D1117" width="90%" alt="streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=santjsx&theme=tokyonight&hide_border=false" width="90%" alt="streak" />
 </div>
 
 <br/>
