@@ -48,18 +48,36 @@ I'm an **aspiring Full Stack Developer** on a focused journey to master the **ME
 
 ## Let's Connect
 
-I'm always excited to connect with other developers, share knowledge, and learn together. Feel free to reach out!
-
 <div align="center">
-  <a href="mailto:heysanthoshreddy@gmail.com">
-    <img src="https://img.shields.io/badge/Email_Me-667eea?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://linkedin.com/in/">
-    <img src="https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/">
-    <img src="https://img.shields.io/badge/Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
+  <table>
+    <tr>
+      <td align="center" width="200">
+        <a href="mailto:heysanthoshreddy@gmail.com">
+          <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" width="150"/>
+        </a>
+        <br/>
+        <sub><b>Drop me a message</b></sub>
+      </td>
+      <td align="center" width="200">
+        <a href="https://linkedin.com/in/">
+          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" width="150"/>
+        </a>
+        <br/>
+        <sub><b>Let's network</b></sub>
+      </td>
+      <td align="center" width="200">
+        <a href="https://twitter.com/">
+          <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="150"/>
+        </a>
+        <br/>
+        <sub><b>Follow my journey</b></sub>
+      </td>
+    </tr>
+  </table>
+  
+  <br/>
+  
+  <i>Open for collaborations, mentorship, and building cool stuff together.</i>
 </div>
 
 <br/>
