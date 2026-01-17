@@ -83,5 +83,5 @@
 <br/>
 
 <div align="center">
-  <img src="footer_mars.svg?v=pilot" width="100%" alt="Footer" />
+  <img src="footer_center.svg" width="100%" alt="Footer" />
 </div>
