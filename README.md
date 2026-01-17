@@ -14,19 +14,14 @@
 
 ## About Me
 
-<img align="right" src="about_section.gif" width="300" />
+## About Me
 
-> *"The only way to learn a new programming language is by writing programs in it."*
-> — Dennis Ritchie
-
-I'm an **aspiring Full Stack Developer** on a focused journey to master the **MERN stack**.
-
-| | |
-|---|---|
-| **Current Focus** | Deep-diving into React, Node.js, Express & MongoDB |
-| **Philosophy** | Clean code, real projects, continuous learning |
-| **Mindset** | Every project is an opportunity to grow |
-| **Open To** | Collaborations, mentorship & developer connections |
+<div align="center">
+  <img src="about_section.gif" width="100%" />
+  <br/>
+  <br/>
+  <img src="about.svg" width="100%" alt="About Me Stats" />
+</div>
 
 <br/>
 

@@ -1,0 +1,40 @@
+<svg width="100%" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; fill: #94a3b8; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+      .value { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; fill: #e2e8f0; font-weight: 400; }
+      .quote { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; fill: #a855f7; font-style: italic; font-weight: 500; }
+      .author { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; fill: #64748b; font-weight: 400; }
+      .grid-line { stroke: #334155; stroke-width: 1; opacity: 0.3; }
+      .icon { font-size: 20px; }
+    </style>
+  </defs>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="796" height="236" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
+
+  <!-- Quote Section (Top) -->
+  <text x="400" y="45" text-anchor="middle" class="quote">"The only way to learn a new programming language is by writing programs in it."</text>
+  <text x="400" y="70" text-anchor="middle" class="author">— Dennis Ritchie</text>
+  
+  <!-- Divider -->
+  <line x1="50" y1="90" x2="750" y2="90" class="grid-line" />
+  <line x1="400" y1="90" x2="400" y2="210" class="grid-line" />
+
+  <!-- Quadrant 1: Focus -->
+  <text x="60" y="130" class="label">🎯 Current Focus</text>
+  <text x="60" y="155" class="value">Mastering React, Node.js &amp; MongoDB</text>
+
+  <!-- Quadrant 2: Philosophy -->
+  <text x="440" y="130" class="label">💡 Philosophy</text>
+  <text x="440" y="155" class="value">Clean Code • Real Projects • Consistency</text>
+
+  <!-- Quadrant 3: Mindset -->
+  <text x="60" y="190" class="label">🌱 Mindset</text>
+  <text x="60" y="215" class="value">Learning by doing, changing by growing</text>
+
+  <!-- Quadrant 4: Open To -->
+  <text x="440" y="190" class="label">🤝 Open To</text>
+  <text x="440" y="215" class="value">Collaborations &amp; Dev Connections</text>
+
+</svg>
