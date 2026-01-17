@@ -1,0 +1,31 @@
+<svg width="100%" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;900&amp;display=swap');
+      
+      .bg { fill: transparent; }
+      .name { 
+        font-family: 'Inter', sans-serif; 
+        font-weight: 900; 
+        font-size: 72px; 
+        fill: #ffffff; 
+        letter-spacing: -2px;
+      }
+      .role { 
+        font-family: 'Inter', sans-serif; 
+        font-weight: 300; 
+        font-size: 14px; 
+        fill: #94a3b8; 
+        letter-spacing: 12px;
+        text-transform: uppercase;
+      }
+      .accent { fill: #3b82f6; } /* Professional Blue Accent */
+    </style>
+  </defs>
+  
+  <text x="50%" y="80" text-anchor="middle" class="name">SANTHOSH<tspan class="accent">.</tspan></text>
+  <text x="50%" y="115" text-anchor="middle" class="role">Full Stack Developer</text>
+  
+  <!-- Subtle minimalist line -->
+  <line x1="350" y1="135" x2="450" y2="135" stroke="#334155" stroke-width="1" />
+</svg>

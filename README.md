@@ -1,56 +1,42 @@
 <div align="center">
-  <img src="header.svg" width="100%" />
+  <img src="header_minimal.svg" width="100%" />
+</div>
+
+<div align="center">
+  <p><b>Architecting robust systems with precision and clarity.</b><br/>Driven by clean code, scalable infrastructure, and premium user experiences.</p>
 </div>
 
 <br/>
 
 <div align="center">
-  <h3>🚀 Mission Status: <span style="color: #FFD700;">LEARNING & BUILDING</span></h3>
-  <p>An aspirational <b>Full Stack Developer</b> architecting the future of the web.<br/>Mastering the MERN stack one commit at a time.</p>
-</div>
 
-<br/>
-
-<div align="center">
-
-| **SYSTEM CAPABILITIES** | **OPERATIONAL METRICS** |
+| **CORE STACK** | **INFRASTRUCTURE** |
 | :---: | :---: |
-| <img src="skills.svg" width="400" /> | <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=tokyonight&cache_seconds=1800" width="400" /> |
-| *Holographic Skill Matrix v1.0* | *Live GitHub Telemetry* |
+| <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /> | <img src="https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white" /> |
+| <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=white" /> | <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/Nginx-000000?style=for-the-badge&logo=nginx&logoColor=white" /> <img src="https://img.shields.io/badge/Redis-000000?style=for-the-badge&logo=redis&logoColor=white" /> |
 
 </div>
 
 <br/>
 
 <div align="center">
-  <h3>🛠 LOADED MODULES</h3>
-  <br/>
+  <h3>🏆 FEATURED WORK</h3>
   
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" height="30" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" height="30" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" height="30" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" height="30" />
-  
-  <br/><br/>
-  
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" height="25" />
-  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" height="25" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" height="25" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=santjsx&theme=tokyonight&hide_border=false" width="90%" alt="streak" />
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="mailto:heysanthoshreddy@gmail.com">
-    <img src="https://img.shields.io/badge/SEND_TRANSMISSION-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://github.com/santjsx/Advocat">
+    <img src="https://img.shields.io/badge/ADVOCAT-LEGAL_TECH-000000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://linkedin.com/in/">
-    <img src="https://img.shields.io/badge/ESTABLISH_UPLINK-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
+  <p><i>Next-Gen Offline-First Practice Management System</i></p>
+</div>
+
+<br/>
+
+<div align="center"> 
+  <a href="mailto:heysanthoshreddy@gmail.com"><img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://twitter.com/"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+</div>
+
+<br/>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat-square&color=000000&label=VISITORS" alt="visitors" />
 </div>
