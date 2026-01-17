@@ -1,10 +1,15 @@
 <svg width="100%" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradients -->
+    <!-- Mars Gradients -->
     <linearGradient id="horizonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0" />
-      <stop offset="50%" stop-color="#a855f7" stop-opacity="1" />
-      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0" />
+      <stop offset="0%" stop-color="#c1440e" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ef4444" stop-opacity="1" />
+      <stop offset="100%" stop-color="#c1440e" stop-opacity="0" />
+    </linearGradient>
+    
+    <linearGradient id="marsBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c1440e" />
+      <stop offset="100%" stop-color="#7f1d1d" />
     </linearGradient>
     
     <style>
@@ -22,16 +27,16 @@
         fill: none;
         stroke: url(#horizonGrad);
         stroke-width: 2;
-        filter: drop-shadow(0 0 8px #a855f7);
+        filter: drop-shadow(0 0 8px #ef4444);
       }
       
       .footer-text {
         font-family: 'Space Grotesk', sans-serif;
         font-size: 12px;
-        fill: #94a3b8;
+        fill: #fdba74;
         letter-spacing: 6px;
         text-transform: uppercase;
-        opacity: 0.8;
+        opacity: 0.9;
       }
       
       @keyframes twinkle {
@@ -41,8 +46,8 @@
     </style>
   </defs>
 
-  <!-- Border -->
-  <rect x="2" y="2" width="796" height="146" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
+  <!-- Border - Mars Red/Rust Theme -->
+  <rect x="2" y="2" width="796" height="146" fill="none" stroke="url(#marsBorder)" stroke-width="3" rx="12" />
 
   <!-- Stars Background -->
   <g>
@@ -52,11 +57,12 @@
     <circle cx="700" cy="50" r="1" class="star" />
     <circle cx="150" cy="80" r="1" class="star" />
     <circle cx="650" cy="70" r="1.5" class="star" />
+    <!-- Added a reddish planet/moon for effect -->
   </g>
 
   <!-- Cosmic Horizon Line (Curved) -->
   <path d="M 50 120 Q 400 60 750 120" class="horizon-glow" />
   
   <!-- Footer Text -->
-  <text x="400" y="140" text-anchor="middle" class="footer-text">Made on Earth</text>
+  <text x="400" y="140" text-anchor="middle" class="footer-text">Made on Mars</text>
 </svg>
