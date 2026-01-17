@@ -1,0 +1,59 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="polyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#7928CA" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; fill: #94a3b8; font-weight: 600; text-anchor: middle; }
+      .grid { fill: none; stroke: #334155; stroke-width: 1; }
+      .data { fill: url(#polyGrad); stroke: #FFD700; stroke-width: 2; filter: url(#glow); animation: pulse 3s infinite; }
+      @keyframes pulse { 0% { stroke-width: 2; stroke-opacity: 1; } 50% { stroke-width: 3; stroke-opacity: 0.8; } 100% { stroke-width: 2; stroke-opacity: 1; } }
+    </style>
+  </defs>
+
+  <!-- Background Grid (Hexagon) -->
+  <!-- Center: 200, 150. Radius: 100 -->
+  <g transform="translate(200, 150)">
+    <!-- Outer Ring -->
+    <path d="M0 -100 L86.6 -50 L86.6 50 L0 100 L-86.6 50 L-86.6 -50 Z" class="grid" />
+    <!-- Mid Ring -->
+    <path d="M0 -66 L57.7 -33 L57.7 33 L0 66 L-57.7 33 L-57.7 -33 Z" class="grid" opacity="0.5"/>
+    <!-- Inner Ring -->
+    <path d="M0 -33 L28.8 -16.5 L28.8 16.5 L0 33 L-28.8 16.5 L-28.8 -16.5 Z" class="grid" opacity="0.3"/>
+    
+    <!-- Data Polygon (MERN Stack Profile) -->
+    <!-- Frontend (Top): 90% -->
+    <!-- Backend (Top Right): 70% -->
+    <!-- Database (Bottom Right): 65% -->
+    <!-- DevOps (Bottom): 40% -->
+    <!-- UI/UX (Bottom Left): 85% -->
+    <!-- Architecture (Top Left): 60% -->
+    <path d="
+      M0 -90 
+      L60.6 -35 
+      L56.3 32.5 
+      L0 40 
+      L-73.6 42.5 
+      L-52 -30 Z" 
+      class="data" />
+  </g>
+
+  <!-- Labels -->
+  <text x="200" y="35" class="label" fill="#38bdf8">Frontend (React)</text>
+  <text x="310" y="90" class="label">Backend (Node)</text>
+  <text x="310" y="220" class="label">Database (Mongo)</text>
+  <text x="200" y="270" class="label">DevOps</text>
+  <text x="90" y="220" class="label">UI/UX Design</text>
+  <text x="90" y="90" class="label">Architecture</text>
+
+  <!-- Title -->
+  <text x="200" y="290" class="label" style="font-size: 10px; opacity: 0.5;">SKILL_MATRIX_V1.0</text>
+</svg>
