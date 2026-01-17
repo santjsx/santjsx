@@ -1,0 +1,139 @@
+<svg width="100%" height="90" viewBox="0 0 800 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .icon-text { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        font-size: 12px; 
+        fill: #94a3b8; 
+        text-anchor: middle;
+        font-weight: 500;
+      }
+      .icon-bg {
+        fill: #1e293b;
+        rx: 8;
+      }
+    </style>
+  </defs>
+  
+  <!-- Border - Red -->
+  <rect x="1" y="1" width="798" height="88" fill="none" stroke="#ef4444" stroke-width="3" rx="12" />
+  
+  <!-- Clip path for marquee area -->
+  <clipPath id="marqueeClip">
+    <rect x="10" y="5" width="780" height="80" />
+  </clipPath>
+  
+  <g clip-path="url(#marqueeClip)">
+    <!-- Animated group 1 -->
+    <g>
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="800 0" 
+        to="-800 0" 
+        dur="12s" 
+        repeatCount="indefinite" />
+      
+      <!-- JavaScript -->
+      <rect x="20" y="15" width="70" height="50" class="icon-bg" />
+      <text x="55" y="47" fill="#F7DF1E" font-size="24" font-weight="bold" text-anchor="middle">JS</text>
+      <text x="55" y="77" class="icon-text">JavaScript</text>
+      
+      <!-- React -->
+      <rect x="110" y="15" width="70" height="50" class="icon-bg" />
+      <text x="145" y="47" fill="#61DAFB" font-size="20" text-anchor="middle">⚛</text>
+      <text x="145" y="77" class="icon-text">React</text>
+      
+      <!-- Node.js -->
+      <rect x="200" y="15" width="70" height="50" class="icon-bg" />
+      <text x="235" y="47" fill="#339933" font-size="20" font-weight="bold" text-anchor="middle">N</text>
+      <text x="235" y="77" class="icon-text">Node.js</text>
+      
+      <!-- Express -->
+      <rect x="290" y="15" width="70" height="50" class="icon-bg" />
+      <text x="325" y="47" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">Ex</text>
+      <text x="325" y="77" class="icon-text">Express</text>
+      
+      <!-- MongoDB -->
+      <rect x="380" y="15" width="70" height="50" class="icon-bg" />
+      <text x="415" y="47" fill="#47A248" font-size="20" font-weight="bold" text-anchor="middle">M</text>
+      <text x="415" y="77" class="icon-text">MongoDB</text>
+      
+      <!-- HTML -->
+      <rect x="470" y="15" width="70" height="50" class="icon-bg" />
+      <text x="505" y="47" fill="#E34F26" font-size="16" font-weight="bold" text-anchor="middle">HTML</text>
+      <text x="505" y="77" class="icon-text">HTML5</text>
+      
+      <!-- CSS -->
+      <rect x="560" y="15" width="70" height="50" class="icon-bg" />
+      <text x="595" y="47" fill="#1572B6" font-size="16" font-weight="bold" text-anchor="middle">CSS</text>
+      <text x="595" y="77" class="icon-text">CSS3</text>
+      
+      <!-- Git -->
+      <rect x="650" y="15" width="70" height="50" class="icon-bg" />
+      <text x="685" y="47" fill="#F05032" font-size="16" font-weight="bold" text-anchor="middle">Git</text>
+      <text x="685" y="77" class="icon-text">Git</text>
+      
+      <!-- VS Code -->
+      <rect x="740" y="15" width="70" height="50" class="icon-bg" />
+      <text x="775" y="47" fill="#007ACC" font-size="16" font-weight="bold" text-anchor="middle">VS</text>
+      <text x="775" y="77" class="icon-text">VS Code</text>
+    </g>
+    
+    <!-- Animated group 2 (seamless loop) -->
+    <g>
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        from="1600 0" 
+        to="0 0" 
+        dur="12s" 
+        repeatCount="indefinite" />
+      
+      <!-- JavaScript -->
+      <rect x="20" y="15" width="70" height="50" class="icon-bg" />
+      <text x="55" y="47" fill="#F7DF1E" font-size="24" font-weight="bold" text-anchor="middle">JS</text>
+      <text x="55" y="77" class="icon-text">JavaScript</text>
+      
+      <!-- React -->
+      <rect x="110" y="15" width="70" height="50" class="icon-bg" />
+      <text x="145" y="47" fill="#61DAFB" font-size="20" text-anchor="middle">⚛</text>
+      <text x="145" y="77" class="icon-text">React</text>
+      
+      <!-- Node.js -->
+      <rect x="200" y="15" width="70" height="50" class="icon-bg" />
+      <text x="235" y="47" fill="#339933" font-size="20" font-weight="bold" text-anchor="middle">N</text>
+      <text x="235" y="77" class="icon-text">Node.js</text>
+      
+      <!-- Express -->
+      <rect x="290" y="15" width="70" height="50" class="icon-bg" />
+      <text x="325" y="47" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">Ex</text>
+      <text x="325" y="77" class="icon-text">Express</text>
+      
+      <!-- MongoDB -->
+      <rect x="380" y="15" width="70" height="50" class="icon-bg" />
+      <text x="415" y="47" fill="#47A248" font-size="20" font-weight="bold" text-anchor="middle">M</text>
+      <text x="415" y="77" class="icon-text">MongoDB</text>
+      
+      <!-- HTML -->
+      <rect x="470" y="15" width="70" height="50" class="icon-bg" />
+      <text x="505" y="47" fill="#E34F26" font-size="16" font-weight="bold" text-anchor="middle">HTML</text>
+      <text x="505" y="77" class="icon-text">HTML5</text>
+      
+      <!-- CSS -->
+      <rect x="560" y="15" width="70" height="50" class="icon-bg" />
+      <text x="595" y="47" fill="#1572B6" font-size="16" font-weight="bold" text-anchor="middle">CSS</text>
+      <text x="595" y="77" class="icon-text">CSS3</text>
+      
+      <!-- Git -->
+      <rect x="650" y="15" width="70" height="50" class="icon-bg" />
+      <text x="685" y="47" fill="#F05032" font-size="16" font-weight="bold" text-anchor="middle">Git</text>
+      <text x="685" y="77" class="icon-text">Git</text>
+      
+      <!-- VS Code -->
+      <rect x="740" y="15" width="70" height="50" class="icon-bg" />
+      <text x="775" y="47" fill="#007ACC" font-size="16" font-weight="bold" text-anchor="middle">VS</text>
+      <text x="775" y="77" class="icon-text">VS Code</text>
+    </g>
+  </g>
+</svg>

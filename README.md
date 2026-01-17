@@ -1,23 +1,19 @@
 <div align="center">
-  <img src="monogram.svg" width="80" alt="S Monogram" />
+  <img src="monogram_mars.svg" width="80" alt="S Monogram" />
   <br/>
-  <img src="header.svg" width="100%" alt="Santhosh - Building my future, one commit at a time" />
+  <img src="header_mars.svg" width="100%" alt="Santhosh - Building my future, one commit at a time" />
 </div>
 
 <br/>
 
 <div align="center">
-  <a href="mailto:heysanthoshreddy@gmail.com"><img src="https://img.shields.io/badge/MAIL-heysanthoshreddy-667eea?style=flat-square&logo=gmail&logoColor=white&labelColor=1e293b" /></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/LINKEDIN-connect-667eea?style=flat-square&logo=linkedin&logoColor=white&labelColor=1e293b" /></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat-square&color=667eea&label=VIEWS&labelColor=1e293b" />
+  <img src="contact_mars.svg" width="100%" alt="Contact Me" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="system_status.svg" width="100%" alt="System Status" />
+  <img src="system_status_mars.svg" width="100%" alt="System Status" />
 </div>
 
 <br/>
@@ -33,7 +29,7 @@
 ## Learning Progress
 
 <div align="center">
-  <img src="progress.svg" width="100%" alt="Learning Progress" />
+  <img src="progress_mars.svg" width="100%" alt="Learning Progress" />
 </div>
 
 <br/>
@@ -41,7 +37,7 @@
 ## Tech I'm Working With
 
 <div align="center">
-  <img src="tech_marquee.svg" width="100%" alt="Tech Stack" />
+  <img src="tech_marquee_mars.svg" width="100%" alt="Tech Stack" />
 </div>
 
 
