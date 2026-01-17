@@ -1,0 +1,120 @@
+<svg width="100%" height="280" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea" />
+      <stop offset="100%" stop-color="#764ba2" />
+    </linearGradient>
+    
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea" />
+      <stop offset="100%" stop-color="#764ba2" />
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&amp;display=swap');
+      
+      .title {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        fill: url(#aboutGrad);
+        font-weight: 700;
+      }
+      
+      .quote {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 13px;
+        fill: #94a3b8;
+        font-style: italic;
+      }
+      
+      .quote-author {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 11px;
+        fill: #64748b;
+      }
+      
+      .label {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 12px;
+        fill: #94a3b8;
+        font-weight: 400;
+      }
+      
+      .value {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 13px;
+        fill: #e2e8f0;
+        font-weight: 600;
+      }
+      
+      .intro {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 14px;
+        fill: #e2e8f0;
+        font-weight: 400;
+      }
+      
+      .highlight {
+        fill: url(#aboutGrad);
+        font-weight: 700;
+      }
+      
+      .icon-circle {
+        fill: none;
+        stroke: url(#iconGrad);
+        stroke-width: 2;
+      }
+      
+      .icon {
+        fill: #667eea;
+      }
+
+      .divider {
+        stroke: #334155;
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+
+  <!-- Border -->
+  <rect x="2" y="2" width="596" height="276" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
+
+  <!-- Quote at top -->
+  <text x="30" y="40" class="quote">"The only way to learn a new programming language is by writing programs in it."</text>
+  <text x="30" y="58" class="quote-author">— Dennis Ritchie</text>
+
+  <!-- Divider line -->
+  <line x1="30" y1="75" x2="570" y2="75" class="divider" stroke-dasharray="4,4" />
+
+  <!-- Intro text -->
+  <text x="30" y="105" class="intro">I'm an <tspan class="highlight">aspiring Full Stack Developer</tspan> on a focused journey</text>
+  <text x="30" y="125" class="intro">to master the <tspan class="highlight">MERN stack</tspan>.</text>
+
+  <!-- Info Cards Row -->
+  <!-- Current Focus -->
+  <g transform="translate(30, 145)">
+    <circle cx="12" cy="15" r="12" class="icon-circle" />
+    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">🎯</text>
+    <text x="32" y="12" class="label">CURRENT FOCUS</text>
+    <text x="32" y="28" class="value">React, Node.js, Express &amp; MongoDB</text>
+  </g>
+
+  <!-- Philosophy -->
+  <g transform="translate(30, 190)">
+    <circle cx="12" cy="15" r="12" class="icon-circle" />
+    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">💡</text>
+    <text x="32" y="12" class="label">PHILOSOPHY</text>
+    <text x="32" y="28" class="value">Clean code, real projects, continuous learning</text>
+  </g>
+
+  <!-- Mindset -->
+  <g transform="translate(30, 235)">
+    <circle cx="12" cy="15" r="12" class="icon-circle" />
+    <text x="12" y="19" text-anchor="middle" class="icon" style="font-size: 12px;">🚀</text>
+    <text x="32" y="12" class="label">MINDSET</text>
+    <text x="32" y="28" class="value">Every project is an opportunity to grow</text>
+  </g>
+
+  <!-- Vertical accent line on left -->
+  <rect x="20" y="145" width="3" height="115" fill="url(#aboutGrad)" rx="1.5" />
+</svg>
