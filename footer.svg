@@ -41,6 +41,9 @@
     </style>
   </defs>
 
+  <!-- Border -->
+  <rect x="2" y="2" width="796" height="146" fill="none" stroke="#667eea" stroke-width="3" rx="12" />
+
   <!-- Stars Background -->
   <g>
     <circle cx="100" cy="40" r="1.5" class="star" />
