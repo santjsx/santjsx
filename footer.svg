@@ -1,0 +1,59 @@
+<svg width="100%" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="horizonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0" />
+    </linearGradient>
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&amp;display=swap');
+      
+      .star {
+        fill: white;
+        animation: twinkle 3s ease-in-out infinite alternate;
+      }
+      
+      .star:nth-child(2n) { animation-delay: 1s; }
+      .star:nth-child(3n) { animation-delay: 2s; }
+      
+      .horizon-glow {
+        fill: none;
+        stroke: url(#horizonGrad);
+        stroke-width: 2;
+        filter: drop-shadow(0 0 8px #a855f7);
+      }
+      
+      .footer-text {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 12px;
+        fill: #94a3b8;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        opacity: 0.8;
+      }
+      
+      @keyframes twinkle {
+        0% { opacity: 0.2; transform: scale(0.8); }
+        100% { opacity: 1; transform: scale(1.2); }
+      }
+    </style>
+  </defs>
+
+  <!-- Stars Background -->
+  <g>
+    <circle cx="100" cy="40" r="1.5" class="star" />
+    <circle cx="250" cy="20" r="1" class="star" />
+    <circle cx="500" cy="30" r="1.5" class="star" />
+    <circle cx="700" cy="50" r="1" class="star" />
+    <circle cx="150" cy="80" r="1" class="star" />
+    <circle cx="650" cy="70" r="1.5" class="star" />
+  </g>
+
+  <!-- Cosmic Horizon Line (Curved) -->
+  <path d="M 50 120 Q 400 60 750 120" class="horizon-glow" />
+  
+  <!-- Footer Text -->
+  <text x="400" y="140" text-anchor="middle" class="footer-text">Made on Earth</text>
+</svg>

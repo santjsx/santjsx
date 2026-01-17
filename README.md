@@ -83,5 +83,5 @@ I'm an **aspiring Full Stack Developer** on a focused journey to master the **ME
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer" width="100%" />
+  <img src="footer.svg" width="100%" alt="Footer" />
 </div>
