@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="monogram_mars.svg" width="80" alt="S Monogram" />
-  <br/>
+
   <img src="header_mars.svg" width="100%" alt="Santhosh - Building my future, one commit at a time" />
 </div>
 
