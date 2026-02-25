@@ -1,9 +1,7 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./mando_profile.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./mando_profile.svg">
-    <img alt="Santhosh Reddy - Software Engineer" src="./mando_profile.svg" width="100%">
-  </picture>
+  <a href="https://linkedin.com/in/santjsx">
+    <img src="mando_profile.svg" width="100%" alt="Sanothsh Reddy - Software Engineer">
+  </a>
 </div>
 
 <!-- 
