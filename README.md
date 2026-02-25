@@ -1,86 +1,87 @@
 <div align="center">
 
-  <img src="header_mars.svg" width="100%" alt="Santhosh - Building my future, one commit at a time" />
-</div>
+# This is the Way.
+
+<img src="https://raw.githubusercontent.com/santjsx/santjsx/main/header_mars.svg" width="100%" alt="Bounty Hunter Profile" />
+
+<br/>
+
+*“I can bring you in warm, or I can bring you in cold.”*
 
 <br/>
 
 <div align="center">
-  <a href="mailto:heysanthoshreddy@gmail.com"><img src="btn_mail_mars.svg" height="45" alt="Mail Me" /></a>
+  <a href="mailto:heysanthoshreddy@gmail.com"><img src="https://img.shields.io/badge/Comlink-Beskar%20Steel-495057?style=for-the-badge&logo=minutemailer&logoColor=white" height="40" alt="Mail Me" /></a>
   &nbsp;
-  <a href="https://linkedin.com/in/"><img src="btn_linkedin_mars.svg" height="45" alt="LinkedIn" /></a>
+  <a href="https://linkedin.com/in/"><img src="https://img.shields.io/badge/HoloNet-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="40" alt="LinkedIn" /></a>
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=santjsx&style=flat-square&color=ef4444&label=VIEWS&labelColor=1e293b" height="45" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=santjsx&style=for-the-badge&color=212529&label=BOUNTIES%20COLLECTED&labelColor=495057" height="40" alt="Profile Views" />
 </div>
 
 <br/>
 
+<hr style="border: 1px solid #495057;">
+
+## 🌌 The Armory (Tech Stack)
+
 <div align="center">
-  <img src="system_status_mars.svg" width="100%" alt="System Status" />
+  <code><img height="40" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"></code>
+  <code><img height="40" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></code>
+  <code><img height="40" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"></code>
+  <code><img height="40" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></code>
+  <code><img height="40" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"></code>
+  <code><img height="40" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></code>
+  <code><img height="40" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"></code>
 </div>
 
 <br/>
 
-## About Me
+<hr style="border: 1px solid #495057;">
+
+## 📊 Bounty Ledger (Stats)
 
 <div align="center">
-  <img src="about_mars.svg" width="100%" alt="About Me" />
+  <img src="https://github-readme-stats.vercel.app/api?username=santjsx&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=A9B4C2&icon_color=E83E8C&text_color=C9D1D9" alt="GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=santjsx&theme=radical&hide_border=true&background=0D1117&ring=E83E8C&fire=E83E8C&currStreakLabel=A9B4C2" alt="GitHub Streak" />
 </div>
 
 <br/>
 
-## Learning Progress
+<hr style="border: 1px solid #495057;">
 
-<div align="center">
-  <img src="progress_mars.svg" width="100%" alt="Learning Progress" />
-</div>
-
-<br/>
-
-## Tech I'm Working With
-
-<div align="center">
-  <img src="tech_marquee_mars.svg" width="100%" alt="Tech Stack" />
-</div>
-
-
-
-## Let's Connect
+## 📡 Transmissions
 
 <div align="center">
   <table>
     <tr>
       <td align="center" width="200">
         <a href="mailto:heysanthoshreddy@gmail.com">
-          <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" width="150"/>
+           <img src="https://img.shields.io/badge/Guild%20Contact-Comlink-495057?style=for-the-badge" width="150"/>
         </a>
         <br/>
-        <sub><b>Drop me a message</b></sub>
+        <sub><b>Direct Transmission</b></sub>
       </td>
       <td align="center" width="200">
         <a href="https://linkedin.com/in/">
-          <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" width="150"/>
+          <img src="https://img.shields.io/badge/Guild%20Network-HoloNet-0A66C2?style=for-the-badge" width="150"/>
         </a>
         <br/>
-        <sub><b>Let's network</b></sub>
+        <sub><b>Establish Connection</b></sub>
       </td>
       <td align="center" width="200">
         <a href="https://twitter.com/">
-          <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="150"/>
+          <img src="https://img.shields.io/badge/Bounty%20Board-Cantina-1DA1F2?style=for-the-badge" width="150"/>
         </a>
         <br/>
-        <sub><b>Follow my journey</b></sub>
+        <sub><b>Track Bounties</b></sub>
       </td>
     </tr>
   </table>
   
   <br/>
   
-  <i>Open for collaborations, mentorship, and building cool stuff together.</i>
+  <i>"We have spoken."</i>
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="footer_final.svg" width="100%" alt="Footer" />
 </div>
