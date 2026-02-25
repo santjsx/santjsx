@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://linkedin.com/in/santjsx">
-    <img src="mando_profile.svg" width="100%" alt="Sanothsh Reddy - Software Engineer">
+    <img src="mando_profile.svg" width="100%" alt="Santhosh Reddy - Software Engineer">
   </a>
 </div>
 

@@ -126,7 +126,7 @@
       <rect x="0" y="10" width="4" height="40" fill="#475569"/>
       
       <text x="30" y="45" class="project-title">THE-HUSTLE-PLANNER</text>
-      <text x="30" y="75" class="project-desc">A full-stack productivity & tracking engine.</text>
+      <text x="30" y="75" class="project-desc">A full-stack productivity &amp; tracking engine.</text>
       <!-- Stack -->
       <rect x="30" y="105" width="300" height="30" fill="#0a0a0c" stroke="#334155" stroke-width="1"/>
       <text x="45" y="125" class="small-caps" fill="#94a3b8">MONGODB // EXPRESS // REACT // NODE</text>
