@@ -66,7 +66,7 @@
     <!-- Identity -->
     <rect x="0" y="0" width="8" height="80" fill="url(#beskar)"/>
     <text x="30" y="45" class="headline">SANTHOSH REDDY</text>
-    <text x="30" y="80" class="subline">Software Engineer // Full Stack Systems</text>
+    <text x="30" y="80" class="subline">MERN Stack Developer // Systems Engineer</text>
     
     <!-- Credo -->
     <rect x="30" y="140" width="800" height="120" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
@@ -88,28 +88,28 @@
       <!-- Node 1: Front-end -->
       <g transform="translate(0, 0)">
         <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
-        <text x="30" y="35" class="tech-label">REACT / NEXT.JS</text>
+        <text x="30" y="35" class="tech-label">REACT / FRONTEND</text>
         <circle cx="15" cy="30" r="4" fill="#64748b"/>
       </g>
       
       <!-- Node 2: Languages -->
       <g transform="translate(260, 0)">
         <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
-        <text x="30" y="35" class="tech-label">JAVASCRIPT / TS</text>
+        <text x="30" y="35" class="tech-label">NODE.JS / BACKEND</text>
         <circle cx="15" cy="30" r="4" fill="#64748b"/>
       </g>
       
       <!-- Node 3: Back-end -->
       <g transform="translate(520, 0)">
         <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
-        <text x="30" y="35" class="tech-label">NODE.JS / EXPRESS</text>
+        <text x="30" y="35" class="tech-label">EXPRESS / API SERVER</text>
         <circle cx="15" cy="30" r="4" fill="#64748b"/>
       </g>
       
       <!-- Node 4: Infrastructure -->
       <g transform="translate(780, 0)">
         <polygon points="10,0 180,0 170,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
-        <text x="30" y="35" class="tech-label">GIT / CI/CD</text>
+        <text x="30" y="35" class="tech-label">MONGODB / DATABASE</text>
         <circle cx="15" cy="30" r="4" fill="#64748b"/>
       </g>
     </g>
@@ -125,11 +125,11 @@
       <path d="M 0 0 L 460 0 L 460 160 L 20 160 L 0 140 Z" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
       <rect x="0" y="10" width="4" height="40" fill="#475569"/>
       
-      <text x="30" y="45" class="project-title">RUCH: MENSWEAR</text>
-      <text x="30" y="75" class="project-desc">Cinematic e-commerce landing interface.</text>
+      <text x="30" y="45" class="project-title">THE-HUSTLE-PLANNER</text>
+      <text x="30" y="75" class="project-desc">A full-stack productivity & tracking engine.</text>
       <!-- Stack -->
       <rect x="30" y="105" width="300" height="30" fill="#0a0a0c" stroke="#334155" stroke-width="1"/>
-      <text x="45" y="125" class="small-caps" fill="#94a3b8">NEXT.JS // TAILWIND // GSAP // LENIS</text>
+      <text x="45" y="125" class="small-caps" fill="#94a3b8">MONGODB // EXPRESS // REACT // NODE</text>
     </g>
 
     <!-- Project 2 -->
@@ -137,11 +137,11 @@
       <path d="M 0 0 L 460 0 L 460 160 L 20 160 L 0 140 Z" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
       <rect x="0" y="10" width="4" height="40" fill="#475569"/>
       
-      <text x="30" y="45" class="project-title">TRACK A LOT</text>
-      <text x="30" y="75" class="project-desc">Precision-focused productivity system.</text>
+      <text x="30" y="45" class="project-title">GTAV-PORTFOLIO</text>
+      <text x="30" y="75" class="project-desc">Interactive game-UI inspired portfolio.</text>
       <!-- Stack -->
       <rect x="30" y="105" width="300" height="30" fill="#0a0a0c" stroke="#334155" stroke-width="1"/>
-      <text x="45" y="125" class="small-caps" fill="#94a3b8">REACT.JS // NODE.JS // MONGODB</text>
+      <text x="45" y="125" class="small-caps" fill="#94a3b8">HTML5 // CSS3 // JAVASCRIPT</text>
     </g>
   </g>
 
