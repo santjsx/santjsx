@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="100%" height="100%">
+  <defs>
+    <!-- Dark Mode Base -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </linearGradient>
+
+    <!-- Beskar Accents -->
+    <linearGradient id="beskar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    
+    <linearGradient id="beskarSubtle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Structural Grid -->
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1e293b" stroke-opacity="0.3" stroke-width="1"/>
+      <!-- Crosshairs at intersections -->
+      <path d="M -3 0 L 3 0 M 0 -3 L 0 3" stroke="#475569" stroke-opacity="0.5" stroke-width="1"/>
+    </pattern>
+
+    <!-- Tech Grid Nodes -->
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" fill-opacity="0.4"/>
+    </pattern>
+
+    <style>
+      .headline { font-family: 'Courier New', monospace; font-weight: bold; font-size: 52px; fill: #f8fafc; letter-spacing: 4px; }
+      .subline { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 20px; fill: #94a3b8; letter-spacing: 2px; text-transform: uppercase; }
+      .body-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; fill: #cbd5e1; line-height: 1.6; }
+      .section-title { font-family: 'Courier New', monospace; font-size: 16px; fill: #64748b; letter-spacing: 6px; text-transform: uppercase; }
+      .tech-label { font-family: 'Courier New', monospace; font-size: 14px; fill: #e2e8f0; letter-spacing: 1px; }
+      .project-title { font-family: 'Courier New', monospace; font-weight: bold; font-size: 24px; fill: #f8fafc; }
+      .project-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; fill: #94a3b8; }
+      .principle-num { font-family: 'Courier New', monospace; font-weight: bold; font-size: 32px; fill: #334155; }
+      .small-caps { font-family: 'Courier New', monospace; font-size: 12px; fill: #475569; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <rect width="1200" height="1600" fill="url(#grid)"/>
+
+  <!-- Tactical HUD Framing -->
+  <path d="M 60 120 L 60 60 L 120 60" fill="none" stroke="url(#beskar)" stroke-width="2"/>
+  <path d="M 1140 120 L 1140 60 L 1080 60" fill="none" stroke="url(#beskar)" stroke-width="2"/>
+  <path d="M 60 1480 L 60 1540 L 120 1540" fill="none" stroke="url(#beskar)" stroke-width="2"/>
+  <path d="M 1140 1480 L 1140 1540 L 1080 1540" fill="none" stroke="url(#beskar)" stroke-width="2"/>
+  
+  <rect x="60" y="60" width="1080" height="1480" fill="none" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 8"/>
+
+  <!-- Top Metadata Status -->
+  <text x="80" y="90" class="small-caps">STATUS: NOMINAL</text>
+  <text x="1120" y="90" class="small-caps" text-anchor="end">SYS.ARCH.OP.01</text>
+  <path d="M 300 86 L 900 86" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- ================= HERO SECTION ================= -->
+  <g transform="translate(120, 220)">
+    <!-- Identity -->
+    <rect x="0" y="0" width="8" height="80" fill="url(#beskar)"/>
+    <text x="30" y="45" class="headline">SANTHOSH REDDY</text>
+    <text x="30" y="80" class="subline">Software Engineer // Full Stack Systems</text>
+    
+    <!-- Credo -->
+    <rect x="30" y="140" width="800" height="120" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
+    <rect x="830" y="140" width="60" height="120" fill="url(#dotGrid)"/>
+    <text x="60" y="185" class="section-title" fill="#475569">/// DIRECTIVE</text>
+    <text x="60" y="225" font-family="'Courier New', monospace" font-style="italic" font-size="24" fill="#cbd5e1" letter-spacing="1">"I build reliable systems. This is the way."</text>
+  </g>
+
+  <!-- Horizontal Divider -->
+  <path d="M 120 540 L 1080 540" stroke="url(#beskarSubtle)" stroke-width="2"/>
+  <rect x="600" y="538" width="40" height="4" fill="#64748b"/>
+
+  <!-- ================= LOADOUT SECTION (Tech Stack) ================= -->
+  <g transform="translate(120, 620)">
+    <text x="0" y="0" class="section-title">/// ARMORY LOADOUT</text>
+    
+    <!-- Tactical Tech Nodes -->
+    <g transform="translate(0, 40)">
+      <!-- Node 1: Front-end -->
+      <g transform="translate(0, 0)">
+        <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
+        <text x="30" y="35" class="tech-label">REACT / NEXT.JS</text>
+        <circle cx="15" cy="30" r="4" fill="#64748b"/>
+      </g>
+      
+      <!-- Node 2: Languages -->
+      <g transform="translate(260, 0)">
+        <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
+        <text x="30" y="35" class="tech-label">JAVASCRIPT / TS</text>
+        <circle cx="15" cy="30" r="4" fill="#64748b"/>
+      </g>
+      
+      <!-- Node 3: Back-end -->
+      <g transform="translate(520, 0)">
+        <polygon points="10,0 240,0 230,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
+        <text x="30" y="35" class="tech-label">NODE.JS / EXPRESS</text>
+        <circle cx="15" cy="30" r="4" fill="#64748b"/>
+      </g>
+      
+      <!-- Node 4: Infrastructure -->
+      <g transform="translate(780, 0)">
+        <polygon points="10,0 180,0 170,60 0,60" fill="#0f141e" stroke="#334155" stroke-width="1"/>
+        <text x="30" y="35" class="tech-label">GIT / CI/CD</text>
+        <circle cx="15" cy="30" r="4" fill="#64748b"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= FEATURED WORK ================= -->
+  <g transform="translate(120, 780)">
+    <text x="0" y="0" class="section-title">/// FEATURED BOUNTIES</text>
+
+    <!-- Project 1 -->
+    <g transform="translate(0, 40)">
+      <!-- Tactical border frame -->
+      <path d="M 0 0 L 460 0 L 460 160 L 20 160 L 0 140 Z" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="10" width="4" height="40" fill="#475569"/>
+      
+      <text x="30" y="45" class="project-title">RUCH: MENSWEAR</text>
+      <text x="30" y="75" class="project-desc">Cinematic e-commerce landing interface.</text>
+      <!-- Stack -->
+      <rect x="30" y="105" width="300" height="30" fill="#0a0a0c" stroke="#334155" stroke-width="1"/>
+      <text x="45" y="125" class="small-caps" fill="#94a3b8">NEXT.JS // TAILWIND // GSAP // LENIS</text>
+    </g>
+
+    <!-- Project 2 -->
+    <g transform="translate(500, 40)">
+      <path d="M 0 0 L 460 0 L 460 160 L 20 160 L 0 140 Z" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="10" width="4" height="40" fill="#475569"/>
+      
+      <text x="30" y="45" class="project-title">TRACK A LOT</text>
+      <text x="30" y="75" class="project-desc">Precision-focused productivity system.</text>
+      <!-- Stack -->
+      <rect x="30" y="105" width="300" height="30" fill="#0a0a0c" stroke="#334155" stroke-width="1"/>
+      <text x="45" y="125" class="small-caps" fill="#94a3b8">REACT.JS // NODE.JS // MONGODB</text>
+    </g>
+  </g>
+
+  <!-- Horizontal Divider -->
+  <path d="M 120 1060 L 1080 1060" stroke="url(#beskarSubtle)" stroke-width="2"/>
+  <rect x="600" y="1058" width="40" height="4" fill="#64748b"/>
+
+  <!-- ================= OPERATING PRINCIPLES ================= -->
+  <g transform="translate(120, 1140)">
+    <text x="0" y="0" class="section-title">/// OPERATING PRINCIPLES</text>
+
+    <!-- Principle 1 -->
+    <g transform="translate(0, 40)">
+      <text x="0" y="30" class="principle-num">01</text>
+      <rect x="40" y="10" width="2" height="60" fill="#334155"/>
+      <text x="60" y="25" class="tech-label" font-weight="bold">DISCIPLINE OVER MOTIVATION</text>
+      <text x="60" y="55" class="body-text">Consistent execution produces reliable systems.</text>
+    </g>
+
+    <!-- Principle 2 -->
+    <g transform="translate(500, 40)">
+      <text x="0" y="30" class="principle-num">02</text>
+      <rect x="40" y="10" width="2" height="60" fill="#334155"/>
+      <text x="60" y="25" class="tech-label" font-weight="bold">CRAFTSMANSHIP IN CODE</text>
+      <text x="60" y="55" class="body-text">Every function reflects professional integrity.</text>
+    </g>
+
+    <!-- Principle 3 -->
+    <g transform="translate(0, 140)">
+      <text x="0" y="30" class="principle-num">03</text>
+      <rect x="40" y="10" width="2" height="60" fill="#334155"/>
+      <text x="60" y="25" class="tech-label" font-weight="bold">RESILIENCE BY DESIGN</text>
+      <text x="60" y="55" class="body-text">Engineer to fail gracefully and recover swiftly.</text>
+    </g>
+
+    <!-- Principle 4 -->
+    <g transform="translate(500, 140)">
+      <text x="0" y="30" class="principle-num">04</text>
+      <rect x="40" y="10" width="2" height="60" fill="#334155"/>
+      <text x="60" y="25" class="tech-label" font-weight="bold">RUTHLESS MINIMALISM</text>
+      <text x="60" y="55" class="body-text">Complexity is liability. Clarity is an asset.</text>
+    </g>
+  </g>
+
+  <!-- ================= CONTACT / SIGNALS ================= -->
+  <g transform="translate(120, 1400)">
+    <text x="0" y="0" class="section-title">/// TRANSMISSIONS</text>
+    
+    <g transform="translate(0, 30)">
+      <rect x="0" y="0" width="800" height="60" fill="#0f141e" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="4" height="60" fill="#94a3b8"/>
+      <text x="30" y="35" class="tech-label">OPEN TO COLLABORATIONS / FREELANCE / PRODUCT WORK</text>
+      
+      <!-- Links represented as Data Nodes (Will be wrapped in anchors in Markdown) -->
+      <g transform="translate(480, 15)">
+        <rect x="0" y="0" width="90" height="30" fill="#e2e8f0" rx="2"/>
+        <text x="45" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#050506" text-anchor="middle">GITHUB</text>
+      </g>
+      <g transform="translate(580, 15)">
+        <rect x="0" y="0" width="90" height="30" fill="#e2e8f0" rx="2"/>
+        <text x="45" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#050506" text-anchor="middle">LINKEDIN</text>
+      </g>
+      <g transform="translate(680, 15)">
+        <rect x="0" y="0" width="90" height="30" fill="#e2e8f0" rx="2"/>
+        <text x="45" y="20" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#050506" text-anchor="middle">EMAIL</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Metadata -->
+  <text x="120" y="1520" class="small-caps">SECURE COMM LINK // ESTABLISHED</text>
+  <text x="1080" y="1520" class="small-caps" text-anchor="end">END OF DIRECTORY</text>
+
+</svg>
