@@ -50,7 +50,7 @@ I forge high-performance systems wielding the MERN stack. My methodology bridges
 </p>
 
 <p align="center">
-  <img src="footer_final.svg" width="100%" />
+  <img src="footer_got.svg" width="100%" />
 </p>
 
 <p align="center">
