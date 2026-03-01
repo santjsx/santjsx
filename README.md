@@ -8,14 +8,14 @@
 
 ---
 
-### ⚔️ THE OATH
+### /// THE OATH
 > **"Words are wind. True power lies in the architecture of the realm. This is the way."**
 
 I forge high-performance systems wielding the MERN stack. My methodology bridges the discipline of an ancient order with the elegance of premium design to craft software that commands the Seven Kingdoms of the Web.
 
 ---
 
-### 🛡️ REALM QUESTS (Active Campaigns)
+### /// REALM QUESTS (Active Campaigns)
 
 <div align="center">
 
@@ -29,14 +29,14 @@ I forge high-performance systems wielding the MERN stack. My methodology bridges
 
 ---
 
-### 📜 THE MAESTER's LOG
+### /// THE MAESTER'S LOG
 - **STRENGTH**: Build fortresses, not just walls.
 - **HONOR**: Code that withstands the longest winters.
 - **RUTHLESSNESS**: Strike down complexity; leave only excellence.
 
 ---
 
-### 🦅 SEND A RAVEN
+### /// SEND A RAVEN
 <p align="center">
   <a href="https://github.com/santjsx">
     <img src="https://img.shields.io/badge/THE_CITADEL-0f0f0f?style=for-the-badge&logo=github&logoColor=f59e0b&labelColor=1a1a1a" />
