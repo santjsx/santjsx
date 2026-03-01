@@ -1,0 +1,51 @@
+<svg width="1000" height="250" viewBox="0 0 1000 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dramatic lighting gradient -->
+    <radialGradient id="fireLight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2a0a0a" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+    
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <style>
+      .title { font-family: 'Georgia', serif; font-size: 56px; font-weight: 900; fill: url(#goldText); letter-spacing: 6px; text-transform: uppercase; filter: drop-shadow(0px 4px 12px rgba(234, 179, 8, 0.2)); }
+      .subtitle { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 16px; font-weight: 400; font-style: italic; fill: #cbd5e1; letter-spacing: 4px; text-transform: uppercase; }
+      .motto { font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size: 12px; font-weight: 600; fill: #94a3b8; letter-spacing: 8px; }
+      .border { stroke: #eab308; stroke-width: 1; stroke-opacity: 0.3; }
+      .accent { fill: #eab308; fill-opacity: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="250" fill="url(#fireLight)" />
+
+  <!-- Medieval Bordering -->
+  <rect x="20" y="20" width="960" height="210" fill="none" class="border" />
+  <rect x="26" y="26" width="948" height="198" fill="none" class="border" stroke-dasharray="2 4" />
+  
+  <!-- Corner Ornaments -->
+  <circle cx="20" cy="20" r="4" class="accent" />
+  <circle cx="980" cy="20" r="4" class="accent" />
+  <circle cx="20" cy="230" r="4" class="accent" />
+  <circle cx="980" cy="230" r="4" class="accent" />
+
+  <!-- Central Crest Area (Abstract Direwolf/Dragon hints via geometry) -->
+  <path d="M 500 40 L 530 80 L 500 100 L 470 80 Z" stroke="#eab308" stroke-width="0.5" fill="none" stroke-opacity="0.4"/>
+  <path d="M 500 50 L 515 75 L 500 85 L 485 75 Z" class="accent" />
+
+  <!-- Text Content -->
+  <text x="500" y="150" text-anchor="middle" class="title">Santhosh Reddy</text>
+  <text x="500" y="185" text-anchor="middle" class="subtitle">Warden of the MERN Stack // Architect of the Realm</text>
+  
+  <!-- Footer Motto -->
+  <text x="500" y="220" text-anchor="middle" class="motto">WINTER IS COMING. DEPLOYMENTS ARE READY.</text>
+
+  <!-- Side framing lines -->
+  <line x1="100" y1="140" x2="250" y2="140" stroke="#eab308" stroke-width="0.5" stroke-opacity="0.3" />
+  <line x1="750" y1="140" x2="900" y2="140" stroke="#eab308" stroke-width="0.5" stroke-opacity="0.3" />
+</svg>

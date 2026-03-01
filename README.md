@@ -1,51 +1,51 @@
 <p align="center">
-  <img src="identity_hud.svg" width="100%" alt="Tactical Identity HUD" />
+  <img src="identity_got.svg" width="100%" alt="House Reddy Banner" />
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,ts,tailwind,git,vite&theme=dark" alt="Arsenal" />
+  <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,ts,tailwind,git,vite&theme=dark" alt="Weapons of Choice" />
 </p>
 
 ---
 
-### 🛡️ OPERATIVE DIRECTIVE
-> **"Consistent execution is the baseline. Craftsmanship is the requirement. This is the way."**
+### ⚔️ THE OATH
+> **"Words are wind. True power lies in the architecture of the realm. This is the way."**
 
-I engineer high-performance systems with the MERN stack. My methodology bridges technical discipline with premium design aesthetics to create software that doesn't just work—it commands attention.
+I forge high-performance systems wielding the MERN stack. My methodology bridges the discipline of an ancient order with the elegance of premium design to craft software that commands the Seven Kingdoms of the Web.
 
 ---
 
-### 📦 BOUNTY BOARD (Active Projects)
+### 🛡️ REALM QUESTS (Active Campaigns)
 
 <div align="center">
 
-| STATUS | OBJECTIVE | LOADOUT |
+| STATUS | CAMPAIGN | WEAPONRY |
 | :--- | :--- | :--- |
-| **NOMINAL** | **[THE-HUSTLE-PLANNER](https://github.com/santjsx/The-Hustle-Planner)** | `Mongo` `Express` `React` `Node` |
-| **NOMINAL** | **[GTAV-PORTFOLIO](https://github.com/santjsx/GTAV-Portfolio)** | `JS` `Tailwind` `Framer-Motion` |
-| **ACTIVE** | **[SANTJSX-CORE](https://github.com/santjsx)** | `System Architecture` `Minimalism` |
+| **VICTORIOUS** | **[THE-HUSTLE-PLANNER](https://github.com/santjsx/The-Hustle-Planner)** | `Mongo` `Express` `React` `Node` |
+| **VICTORIOUS** | **[GTAV-PORTFOLIO](https://github.com/santjsx/GTAV-Portfolio)** | `JS` `Tailwind` `Framer-Motion` |
+| **MARCHING** | **[SANTJSX-CORE](https://github.com/santjsx)** | `Grand Strategy` `Steel Minimalism` |
 
 </div>
 
 ---
 
-### 📜 SYSTEMS LOG
-- **MODULARITY**: Build systems, not just features.
-- **INTEGRITY**: Code that withstands scrutiny.
-- **RUTHLESS MINIMALISM**: Remove the noise until only excellence remains.
+### 📜 THE MAESTER's LOG
+- **STRENGTH**: Build fortresses, not just walls.
+- **HONOR**: Code that withstands the longest winters.
+- **RUTHLESSNESS**: Strike down complexity; leave only excellence.
 
 ---
 
-### 📡 SECURE TRANSMISSIONS
+### 🦅 SEND A RAVEN
 <p align="center">
   <a href="https://github.com/santjsx">
-    <img src="https://img.shields.io/badge/GITHUB-050506?style=for-the-badge&logo=github&logoColor=94a3b8&labelColor=1e293b" />
+    <img src="https://img.shields.io/badge/THE_CITADEL-0f0f0f?style=for-the-badge&logo=github&logoColor=f59e0b&labelColor=1a1a1a" />
   </a>
   <a href="https://linkedin.com/in/santjsx">
-    <img src="https://img.shields.io/badge/LINKEDIN-050506?style=for-the-badge&logo=linkedin&logoColor=94a3b8&labelColor=1e293b" />
+    <img src="https://img.shields.io/badge/THE_MERCHANTS-0f0f0f?style=for-the-badge&logo=linkedin&logoColor=f59e0b&labelColor=1a1a1a" />
   </a>
   <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/EMAIL-050506?style=for-the-badge&logo=gmail&logoColor=94a3b8&labelColor=1e293b" />
+    <img src="https://img.shields.io/badge/A_RAVEN-0f0f0f?style=for-the-badge&logo=gmail&logoColor=f59e0b&labelColor=1a1a1a" />
   </a>
 </p>
 
@@ -54,6 +54,7 @@ I engineer high-performance systems with the MERN stack. My methodology bridges 
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ENCRYPTION-STABLE-475569?style=flat-square" />
-  <img src="https://img.shields.io/badge/SYSTEM-LOGGED-475569?style=flat-square" />
+  <img src="https://img.shields.io/badge/WINTER_IS-COMING-334155?style=flat-square" />
+  <img src="https://img.shields.io/badge/THE_NORTH-REMEMBERS-334155?style=flat-square" />
 </p>
+
