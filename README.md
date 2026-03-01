@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="identity_got.svg" width="100%" alt="House Reddy Banner" />
+  <img src="identity_got.svg?v=2" width="100%" alt="House Reddy Banner" />
 </p>
 
 <p align="center">
