@@ -16,6 +16,17 @@
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
 
+    <!-- Animated Shine Layer -->
+    <linearGradient id="shine" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="48%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="52%" stop-color="transparent" />
+      <stop offset="100%" stop-color="transparent" />
+      <animate attributeName="x1" dur="10s" from="-100%" to="200%" repeatCount="indefinite" />
+      <animate attributeName="x2" dur="10s" from="100%" to="400%" repeatCount="indefinite" />
+    </linearGradient>
+
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <!-- Large diffuse shadow -->
       <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.9" />
@@ -65,5 +76,7 @@
     <use href="#logo-shapes" fill="url(#silver)" stroke="#020617" stroke-width="2.5" />
     <!-- Thin bright stroke layer for the metallic bevel effect -->
     <use href="#logo-shapes" fill="url(#silver)" stroke="#ffffff" stroke-width="0.5" />
+    <!-- Animated Light Sheen -->
+    <use href="#logo-shapes" fill="url(#shine)" />
   </g>
 </svg>

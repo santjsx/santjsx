@@ -17,15 +17,14 @@ I forge high-performance systems wielding the MERN stack. My methodology bridges
 
 ### /// REALM QUESTS (Active Campaigns)
 
-<div align="center">
-
-| STATUS | CAMPAIGN | WEAPONRY |
-| :--- | :--- | :--- |
-| **VICTORIOUS** | **[THE-HUSTLE-PLANNER](https://github.com/santjsx/The-Hustle-Planner)** | `Mongo` `Express` `React` `Node` |
-| **VICTORIOUS** | **[GTAV-PORTFOLIO](https://github.com/santjsx/GTAV-Portfolio)** | `JS` `Tailwind` `Framer-Motion` |
-| **MARCHING** | **[SANTJSX-CORE](https://github.com/santjsx)** | `Grand Strategy` `Steel Minimalism` |
-
-</div>
+<p align="center">
+  <a href="https://github.com/santjsx/The-Hustle-Planner">
+    <img src="quest_hustle.svg" width="48%" />
+  </a>
+  <a href="https://github.com/santjsx/GTAV-Portfolio">
+    <img src="quest_gtav.svg" width="48%" />
+  </a>
+</p>
 
 ---
 
