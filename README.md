@@ -1,24 +1,44 @@
-<div align="center">
-  <a href="https://linkedin.com/in/santjsx">
-    <img src="mando_profile.svg" width="100%" alt="Santhosh Reddy - Software Engineer">
-  </a>
-</div>
+# <p align="center">SANTHOSH REDDY</p>
+<p align="center">
+  <i>Systems Engineer // MERN Stack Developer // Mando at Heart</i>
+</p>
 
-<!-- 
-=============================================================================
-  NOTE ON ARCHITECTURE & EDITS
-=============================================================================
-  This profile is driven entirely by the `mando_profile.svg` file to deliver
-  a cohesive, premium, brand-level aesthetic without relying on mismatched 
-  external assets or markdown styling limitations.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,html,css,git,vscode&theme=dark" alt="Tech Stack" />
+</p>
 
-  To edit content (e.g., adding a new project or updating the tech stack):
-  1. Open `mando_profile.svg` in any code editor.
-  2. Locate the relevant <g> (group) tags (e.g., "FEATURED WORK" or "LOADOUT").
-  3. Modify the inner <text> nodes directly. 
-  
-  The layout relies on absolute transform coordinates. If adding significant
-  vertical content, simply update the `<svg>` height attribute and shift 
-  subsequent `<g transform="translate(...)">` Y-values accordingly.
-=============================================================================
--->
+---
+
+### 🛡️ DIRECTIVE
+> "Consistent execution produces reliable systems. This is the way."
+
+I specialize in building high-performance full-stack applications with the MERN stack. My approach combines the discipline of systems engineering with the creativity of modern web design to deliver products that are as resilient as they are beautiful.
+
+---
+
+### 📦 BOUNTIES (Projects)
+
+| Project | Description | Loadout |
+| :--- | :--- | :--- |
+| **[The Hustle Planner](https://github.com/santjsx/The-Hustle-Planner)** | Productivity & tracking engine. | `MongoDB` `Node.js` `React` |
+| **[GTAV Portfolio](https://github.com/santjsx/GTAV-Portfolio)** | Interactive game-UI inspired portfolio. | `JS` `Tailwind` `Vite` |
+
+---
+
+### 📜 OPERATING PRINCIPLES
+- **DISCIPLINE OVER MOTIVATION**: Reliability through consistent execution.
+- **CRAFTSMANSHIP**: Every function reflects professional integrity.
+- **RUTHLESS MINIMALISM**: Complexity is a liability; clarity is an asset.
+
+---
+
+### 📡 TRANSMISSIONS
+<p align="start">
+  <a href="https://github.com/santjsx"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/santjsx"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <img src="footer_final.svg" width="100%" />
+</p>
