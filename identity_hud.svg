@@ -1,0 +1,36 @@
+<svg width="1000" height="200" viewBox="0 0 1000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .name { font-family: 'Courier New', monospace; font-size: 48px; font-weight: 800; fill: #f8fafc; letter-spacing: 8px; }
+      .role { font-family: -apple-system, sans-serif; font-size: 16px; font-weight: 500; fill: #94a3b8; letter-spacing: 4px; text-transform: uppercase; }
+      .data { font-family: 'Courier New', monospace; font-size: 10px; fill: #475569; }
+      .accent { stroke: #94a3b8; stroke-width: 1.5; }
+      .glow { filter: drop-shadow(0 0 4px #94a3b8); }
+    </style>
+  </defs>
+
+  <!-- HUD Frame -->
+  <path d="M 20 40 L 20 20 L 60 20" class="accent" />
+  <path d="M 980 40 L 980 20 L 940 20" class="accent" />
+  <path d="M 20 160 L 20 180 L 60 180" class="accent" />
+  <path d="M 980 160 L 980 180 L 940 180" class="accent" />
+
+  <line x1="100" y1="20" x2="900" y2="20" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="100" y1="180" x2="900" y2="180" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4" />
+
+  <!-- Identity -->
+  <text x="500" y="90" text-anchor="middle" class="name">SANTHOSH REDDY</text>
+  <text x="500" y="130" text-anchor="middle" class="role">MERN Stack // Systems Engineer // Sector 7G</text>
+
+  <!-- Technical Overlay Details -->
+  <g class="data">
+    <text x="40" y="35">SYS.TYPE: OPERATIONAL</text>
+    <text x="40" y="175">COORD: 12.9716° N, 77.5946° E</text>
+    <text x="960" y="35" text-anchor="end">Uptime: 99.9%</text>
+    <text x="960" y="175" text-anchor="end">VER: 2.0.4-STABLE</text>
+  </g>
+
+  <!-- Crosshairs -->
+  <circle cx="500" cy="180" r="4" fill="#94a3b8" />
+  <path d="M 490 180 L 510 180 M 500 170 L 500 190" stroke="#94a3b8" stroke-width="0.5" />
+</svg>
