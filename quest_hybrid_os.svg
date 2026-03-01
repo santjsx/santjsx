@@ -32,13 +32,13 @@
   <text x="35" y="34" class="status">VICTORIOUS</text>
 
   <!-- Title -->
-  <text x="20" y="70" class="title">GTAV PORTFOLIO</text>
+  <text x="20" y="70" class="title">HYBRID_OS</text>
   
   <line x1="20" y1="85" x2="380" y2="85" stroke="#1e293b" stroke-width="1" />
 
   <!-- Tech Stack Loadout -->
   <text x="20" y="115" class="tech">WEAPONRY:</text>
-  <text x="95" y="115" class="tech" fill="#94a3b8">JavaScript, Tailwind CSS, Vite</text>
+  <text x="95" y="115" class="tech" fill="#94a3b8">HTML, CSS, JavaScript</text>
   
   <!-- View Details Arrow -->
   <path d="M 360 110 L 370 115 L 360 120 Z" fill="#475569" />

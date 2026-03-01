@@ -21,8 +21,16 @@ I forge high-performance systems wielding the MERN stack. My methodology bridges
   <a href="https://github.com/santjsx/The-Hustle-Planner">
     <img src="quest_hustle.svg" width="48%" />
   </a>
-  <a href="https://github.com/santjsx/GTAV-Portfolio">
-    <img src="quest_gtav.svg" width="48%" />
+  <a href="https://github.com/santjsx/Hybrid_OS">
+    <img src="quest_hybrid_os.svg" width="48%" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/santjsx/my-portfolio">
+    <img src="quest_portfolio.svg" width="48%" />
+  </a>
+  <a href="https://github.com/santjsx/wallpapers">
+    <img src="quest_wallpapers.svg" width="48%" />
   </a>
 </p>
 
