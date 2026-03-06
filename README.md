@@ -1,67 +1,25 @@
-<p align="center">
-  <img src="identity_got.svg?v=2" width="100%" alt="House Reddy Banner" />
-</p>
+<h1 align="center">hi, i'm santjsx ✦</h1>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,ts,tailwind,git,vite&theme=dark" alt="Weapons of Choice" />
-</p>
-
----
-
-### /// THE OATH
-> **"Words are wind. True power lies in the architecture of the realm. This is the way."**
-
-I forge high-performance systems wielding the MERN stack. My methodology bridges the discipline of an ancient order with the elegance of premium design to craft software that commands the Seven Kingdoms of the Web.
-
----
-
-### /// REALM QUESTS (Active Campaigns)
-
-<p align="center">
-  <a href="https://github.com/santjsx/The-Hustle-Planner">
-    <img src="quest_hustle.svg" width="48%" />
-  </a>
-  <a href="https://github.com/santjsx/Hybrid_OS">
-    <img src="quest_hybrid_os.svg" width="48%" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/santjsx/my-portfolio">
-    <img src="quest_portfolio.svg" width="48%" />
-  </a>
-  <a href="https://github.com/santjsx/wallpapers">
-    <img src="quest_wallpapers.svg" width="48%" />
-  </a>
+  <i>not perfect, just a learner.</i><br>
+  technology freak • aspiring web developer • striving for consistency
 </p>
 
 ---
 
-### /// THE MAESTER'S LOG
-- **STRENGTH**: Build fortresses, not just walls.
-- **HONOR**: Code that withstands the longest winters.
-- **RUTHLESSNESS**: Strike down complexity; leave only excellence.
+### ✦ about me
+i'm currently navigating the vast world of web development. my goal isn't to be perfect overnight, but to show up consistently and learn something new every day. 
 
----
+- 🌱 **currently learning:** the ins and outs of modern web development and the javascript ecosystem.
+- ⚡ **mindset:** progress over perfection. building, breaking, and fixing things.
+- 💡 **interests:** clean ui/ux, fast web applications, and experimenting with new technologies.
 
-### /// SEND A RAVEN
-<p align="center">
-  <a href="https://github.com/santjsx">
-    <img src="https://img.shields.io/badge/THE_CITADEL-0f0f0f?style=for-the-badge&logo=github&logoColor=f59e0b&labelColor=1a1a1a" />
-  </a>
-  <a href="https://linkedin.com/in/santjsx">
-    <img src="https://img.shields.io/badge/THE_MERCHANTS-0f0f0f?style=for-the-badge&logo=linkedin&logoColor=f59e0b&labelColor=1a1a1a" />
-  </a>
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/A_RAVEN-0f0f0f?style=for-the-badge&logo=gmail&logoColor=f59e0b&labelColor=1a1a1a" />
-  </a>
+### ✦ core stack
+`html5` `css3` `javascript` `react` `git`
+
+### ✦ connect
+<p>
+  feel free to reach out if you want to talk about code, tech, or cool ideas.
 </p>
 
-<p align="center">
-  <img src="footer_got.svg" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/WINTER_IS-COMING-334155?style=flat-square" />
-  <img src="https://img.shields.io/badge/THE_NORTH-REMEMBERS-334155?style=flat-square" />
-</p>
-
+> *"the expert at anything was once a beginner."*
