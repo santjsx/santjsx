@@ -1,49 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#111820;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#79c0ff;stop-opacity:1" />
-    </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#21262d" stroke-width="0.5"/>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="16" r="0.6" fill="#30363d" opacity="0.5"/>
     </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="320" fill="url(#bg)" rx="12"/>
+  <rect width="900" height="280" fill="url(#bg)" rx="0"/>
+  <rect width="900" height="280" fill="url(#dots)" rx="0"/>
 
-  <!-- Grid Pattern -->
-  <rect width="900" height="320" fill="url(#grid)" rx="12" opacity="0.6"/>
-
-  <!-- Accent Line -->
-  <rect x="60" y="100" width="60" height="3" fill="url(#accent)" rx="2"/>
-
-  <!-- Name -->
-  <text x="60" y="148" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#e6edf3" letter-spacing="-0.5">
+  <text x="450" y="125" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="600" fill="#f0f6fc" text-anchor="middle" letter-spacing="-1">
     Santhosh Reddy
   </text>
 
-  <!-- Title -->
-  <text x="60" y="185" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#8b949e" letter-spacing="0.5">
-    Aspiring Web Developer &amp; Technology Enthusiast
+  <text x="450" y="165" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="300" fill="#8b949e" text-anchor="middle" letter-spacing="3">
+    ASPIRING WEB DEVELOPER
   </text>
 
-  <!-- Tagline -->
-  <text x="60" y="225" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#58a6ff" letter-spacing="0.3">
-    continuous learner · consistent builder · technology enthusiast
-  </text>
-
-  <!-- Decorative dots -->
-  <circle cx="800" cy="60" r="3" fill="#58a6ff" opacity="0.4"/>
-  <circle cx="820" cy="80" r="2" fill="#58a6ff" opacity="0.3"/>
-  <circle cx="780" cy="85" r="4" fill="#58a6ff" opacity="0.2"/>
-  <circle cx="830" cy="50" r="2" fill="#58a6ff" opacity="0.25"/>
-  <circle cx="760" cy="55" r="3" fill="#58a6ff" opacity="0.15"/>
-
-  <!-- Bottom border accent -->
-  <rect x="0" y="316" width="900" height="4" fill="url(#accent)" rx="0"/>
+  <rect x="425" y="190" width="50" height="1.5" fill="#30363d" rx="1"/>
 </svg>

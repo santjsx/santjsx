@@ -1,6 +1,6 @@
-<h1 align="center">Santhosh Reddy</h1>
-
-<p align="center">Aspiring Web Developer</p>
+<p align="center">
+  <img src="hero.svg" alt="Santhosh Reddy" width="100%" />
+</p>
 
 <br><br>
 
