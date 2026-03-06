@@ -1,23 +1,25 @@
-<h1 align="center">hi, i'm Santhosh Reddy ✦</h1>
+```zsh
+➜  ~ whoami
+santhosh_reddy
 
-<p align="center">
-  <i>continuous learner.</i><br>
-  technology enthusiast • aspiring web developer
-</p>
+➜  ~ cat profile.txt
+Santhosh Reddy | Aspiring Web Developer & Technology Enthusiast
 
----
+I am an aspiring web developer with a profound passion for technology.
+My journey in software engineering is driven by continuous, consistent
+learning rather than the pursuit of immediate perfection. I am dedicated
+to expanding my technical skill set every day and building a solid 
+foundation in modern web development practices.
 
-### ✦ about
-i am an aspiring web developer with a profound passion for technology. my journey in software engineering is driven by continuous, consistent learning rather than the pursuit of immediate perfection. i am dedicated to expanding my technical skill set every day and building a solid foundation in modern web development practices.
+➜  ~ ls skills/
+html5   css3   javascript   react   git   
 
-- 🌱 **focus:** deepening my knowledge of modern web development, responsive design, and the javascript ecosystem.
-- ⚡ **philosophy:** prioritizing steady, consistent progress and iterative improvement over overnight perfection.
-- 💡 **interests:** developing clean user interfaces, optimizing web performance, and exploring emerging technologies.
+➜  ~ cat philosophy.md
+• Focus: Deepening knowledge of modern web development & the JS ecosystem.
+• Mindset: Prioritizing steady progress and iterative improvement.
+• Interests: Developing clean UIs, web performance, and new tech.
 
-### ✦ technical stack
-`html5` `css3` `javascript` `react` `git`
-
-### ✦ connect
-<p>
-  i am always open to discussing technology, collaborative projects, or potential opportunities. let's connect and learn together!
-</p>
+➜  ~ ./connect.sh
+I am always open to discussing technology, collaborative projects, 
+or potential opportunities. Let's connect and learn together!
+```
