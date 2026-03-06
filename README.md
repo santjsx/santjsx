@@ -1,25 +1,19 @@
-<h1 align="center">hi, i'm santjsx ✦</h1>
+# Santhosh Reddy
 
-<p align="center">
-  <i>not perfect, just a learner.</i><br>
-  technology freak • aspiring web developer • striving for consistency
-</p>
+Continuous Learner | Aspiring Web Developer | Technology Enthusiast
 
 ---
 
-### ✦ about me
-i'm currently navigating the vast world of web development. my goal isn't to be perfect overnight, but to show up consistently and learn something new every day. 
+### About
+I am an aspiring web developer with a profound passion for technology. My journey in software engineering is driven by continuous, consistent learning rather than the pursuit of immediate perfection. I am dedicated to expanding my technical skill set every day and building a solid foundation in modern web development practices.
 
-- 🌱 **currently learning:** the ins and outs of modern web development and the javascript ecosystem.
-- ⚡ **mindset:** progress over perfection. building, breaking, and fixing things.
-- 💡 **interests:** clean ui/ux, fast web applications, and experimenting with new technologies.
+### Focus
+- **Current Learning:** Deepening my knowledge of modern web development, responsive design, and the JavaScript ecosystem.
+- **Development Philosophy:** Prioritizing steady, consistent progress and iterative improvement over overnight perfection.
+- **Interests:** Developing clean user interfaces, optimizing web performance, and exploring emerging technologies.
 
-### ✦ core stack
-`html5` `css3` `javascript` `react` `git`
+### Technical Stack
+`HTML5` • `CSS3` • `JavaScript` • `React` • `Git`
 
-### ✦ connect
-<p>
-  feel free to reach out if you want to talk about code, tech, or cool ideas.
-</p>
-
-> *"the expert at anything was once a beginner."*
+### Connect
+I am always open to discussing technology, collaborative projects, or potential opportunities. Let's connect and learn together!
