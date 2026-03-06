@@ -47,7 +47,7 @@
 
   <!-- stack -->
   <text x="28" y="197" font-family="monospace" font-size="14" fill="#7aa2f7">➜  <tspan fill="#9ece6a">~</tspan> <tspan fill="#c0caf5">ls skills/</tspan></text>
-  <text x="28" y="219" font-family="monospace" font-size="14" fill="#a9b1d6">HTML  CSS  JavaScript  React  Git</text>
+  <text x="28" y="219" font-family="monospace" font-size="14"><tspan fill="#E34F26">HTML</tspan>  <tspan fill="#1572B6">CSS</tspan>  <tspan fill="#F7DF1E">JavaScript</tspan>  <tspan fill="#61DAFB">React</tspan>  <tspan fill="#F05032">Git</tspan></text>
 
   <!-- focus -->
   <text x="28" y="249" font-family="monospace" font-size="14" fill="#7aa2f7">➜  <tspan fill="#9ece6a">~</tspan> <tspan fill="#c0caf5">cat focus.md</tspan></text>
