@@ -2,15 +2,15 @@
 
   <style>
     @keyframes typing {
-      0% { width: 0 }
-      40% { width: 118px }
-      100% { width: 118px }
+      0% { x: 28px }
+      40% { x: 156px }
+      100% { x: 156px }
     }
     @keyframes blink {
       0%, 100% { opacity: 1 }
       50% { opacity: 0 }
     }
-    .typing-mask { animation: typing 3s steps(15) infinite }
+    .typing-mask { animation: typing 3s steps(15) infinite; width: 200px }
     .cursor { animation: blink 1s step-end infinite }
   </style>
 
