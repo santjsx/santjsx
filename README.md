@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.svg" alt="Santhosh Reddy" width="100%" />
+  <img src="hero.svg" alt="Santhosh Reddy — Terminal" width="100%" />
 </p>
 
 <br><br>
@@ -8,12 +8,6 @@
 I am an aspiring web developer with a strong passion for technology.<br>
 My journey focuses on continuous learning and building a solid foundation<br>
 in modern web development.
-</p>
-
-<br><br>
-
-<p align="center">
-HTML &nbsp;&nbsp;·&nbsp;&nbsp; CSS &nbsp;&nbsp;·&nbsp;&nbsp; JavaScript &nbsp;&nbsp;·&nbsp;&nbsp; React &nbsp;&nbsp;·&nbsp;&nbsp; Git
 </p>
 
 <br><br>
