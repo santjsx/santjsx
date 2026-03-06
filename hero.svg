@@ -1,5 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380">
 
+  <style>
+    @keyframes typing {
+      0% { width: 0 }
+      40% { width: 118px }
+      100% { width: 118px }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1 }
+      50% { opacity: 0 }
+    }
+    .typing-mask { animation: typing 3s steps(15) infinite }
+    .cursor { animation: blink 1s step-end infinite }
+  </style>
+
   <!-- Terminal Window -->
   <rect width="880" height="380" rx="10" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
 
@@ -17,7 +31,14 @@
 
   <!-- whoami -->
   <text x="28" y="75" font-family="monospace" font-size="14" fill="#7aa2f7">➜  <tspan fill="#9ece6a">~</tspan> <tspan fill="#c0caf5">whoami</tspan></text>
-  <text x="28" y="97" font-family="monospace" font-size="14" fill="#a9b1d6">santhosh_reddy</text>
+
+  <!-- Typing name -->
+  <g>
+    <text x="28" y="97" font-family="monospace" font-size="14" fill="#a9b1d6">santhosh_reddy</text>
+    <rect x="28" y="83" height="18" fill="#1a1b26" class="typing-mask"/>
+  </g>
+  <!-- Typing cursor -->
+  <rect x="146" y="84" width="8" height="16" fill="#c0caf5" class="cursor"/>
 
   <!-- about -->
   <text x="28" y="127" font-family="monospace" font-size="14" fill="#7aa2f7">➜  <tspan fill="#9ece6a">~</tspan> <tspan fill="#c0caf5">cat about.txt</tspan></text>
