@@ -1,44 +1,32 @@
-<p align="center">
-  <img src="hero.svg" alt="Santhosh Reddy — Aspiring Web Developer" width="100%" />
-</p>
+<h1 align="center">Santhosh Reddy</h1>
 
-<br>
+<p align="center">Aspiring Web Developer</p>
+
+<br><br>
 
 <p align="center">
 I am an aspiring web developer with a strong passion for technology.<br>
 My journey focuses on continuous learning and building a solid foundation<br>
-in modern web development — one commit at a time.
+in modern web development.
 </p>
 
-<br>
-
----
-
-<br>
+<br><br>
 
 <p align="center">
-  <code>HTML5</code> · <code>CSS3</code> · <code>JavaScript</code> · <code>React</code> · <code>Git</code>
+HTML &nbsp;&nbsp;·&nbsp;&nbsp; CSS &nbsp;&nbsp;·&nbsp;&nbsp; JavaScript &nbsp;&nbsp;·&nbsp;&nbsp; React &nbsp;&nbsp;·&nbsp;&nbsp; Git
 </p>
 
-<br>
-
----
-
-<br>
-
-```
-• Focus    : Modern web development & the JavaScript ecosystem
-• Mindset  : Consistent progress and iterative improvement
-• Interests: Clean UI, performance, and new technologies
-```
-
-<br>
-
----
-
-<br>
+<br><br>
 
 <p align="center">
-  <em>Always open to discussing technology, collaborative projects, or opportunities to learn and grow.</em><br><br>
-  <a href="https://github.com/santjsx"><img src="https://img.shields.io/badge/Let's_Connect-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<strong>Focus</strong> — Modern web development and the JavaScript ecosystem<br>
+<strong>Mindset</strong> — Consistent progress and iterative improvement<br>
+<strong>Interests</strong> — Clean UI development, performance, and new technologies
+</p>
+
+<br><br>
+
+<p align="center">
+<em>Always open to discussing technology, collaborative projects,<br>
+or opportunities to learn and grow.</em>
 </p>
