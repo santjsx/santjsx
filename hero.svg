@@ -14,7 +14,6 @@
     .cursor { animation: blink 1s step-end infinite }
 
     @keyframes pacmove { 0% { transform: translateX(0) } 100% { transform: translateX(830px) } }
-    @keyframes chomp { 0% { d: path('M12,0 A12,12 0 1,1 12,24 L12,12 Z') } 50% { d: path('M12,0 A12,12 0 1,1 12,24 L12,12 Z') } 51% { d: path('M12,2 A12,12 0 1,0 12,22 L12,12 Z') } 100% { d: path('M12,2 A12,12 0 1,0 12,22 L12,12 Z') } }
     @keyframes doteat1 { 0%,14% { opacity:1 } 15% { opacity:0 } 100% { opacity:0 } }
     @keyframes doteat2 { 0%,24% { opacity:1 } 25% { opacity:0 } 100% { opacity:0 } }
     @keyframes doteat3 { 0%,34% { opacity:1 } 35% { opacity:0 } 100% { opacity:0 } }
@@ -25,7 +24,6 @@
     @keyframes doteat8 { 0%,84% { opacity:1 } 85% { opacity:0 } 100% { opacity:0 } }
     @keyframes doteat9 { 0%,94% { opacity:1 } 95% { opacity:0 } 100% { opacity:0 } }
     .pacman { animation: pacmove 8s linear infinite }
-    .mouth { animation: chomp 0.3s steps(2) infinite }
     .d1 { animation: doteat1 8s linear infinite }
     .d2 { animation: doteat2 8s linear infinite }
     .d3 { animation: doteat3 8s linear infinite }
@@ -121,7 +119,7 @@
   <!-- Pac-Man -->
   <g class="pacman">
     <circle cx="12" cy="410" r="12" fill="#F7DF1E"/>
-    <path d="M12,410 L24,402 L24,418 Z" fill="#1a1b26" class="mouth"/>
+    <path d="M12,410 L24,402 L24,418 Z" fill="#1a1b26"/>
   </g>
 
 </svg>
