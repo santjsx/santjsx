@@ -1,19 +1,23 @@
-# Santhosh Reddy
+<h1 align="center">hi, i'm Santhosh Reddy ✦</h1>
 
-Continuous Learner | Aspiring Web Developer | Technology Enthusiast
+<p align="center">
+  <i>continuous learner.</i><br>
+  technology enthusiast • aspiring web developer
+</p>
 
 ---
 
-### About
-I am an aspiring web developer with a profound passion for technology. My journey in software engineering is driven by continuous, consistent learning rather than the pursuit of immediate perfection. I am dedicated to expanding my technical skill set every day and building a solid foundation in modern web development practices.
+### ✦ about
+i am an aspiring web developer with a profound passion for technology. my journey in software engineering is driven by continuous, consistent learning rather than the pursuit of immediate perfection. i am dedicated to expanding my technical skill set every day and building a solid foundation in modern web development practices.
 
-### Focus
-- **Current Learning:** Deepening my knowledge of modern web development, responsive design, and the JavaScript ecosystem.
-- **Development Philosophy:** Prioritizing steady, consistent progress and iterative improvement over overnight perfection.
-- **Interests:** Developing clean user interfaces, optimizing web performance, and exploring emerging technologies.
+- 🌱 **focus:** deepening my knowledge of modern web development, responsive design, and the javascript ecosystem.
+- ⚡ **philosophy:** prioritizing steady, consistent progress and iterative improvement over overnight perfection.
+- 💡 **interests:** developing clean user interfaces, optimizing web performance, and exploring emerging technologies.
 
-### Technical Stack
-`HTML5` • `CSS3` • `JavaScript` • `React` • `Git`
+### ✦ technical stack
+`html5` `css3` `javascript` `react` `git`
 
-### Connect
-I am always open to discussing technology, collaborative projects, or potential opportunities. Let's connect and learn together!
+### ✦ connect
+<p>
+  i am always open to discussing technology, collaborative projects, or potential opportunities. let's connect and learn together!
+</p>
