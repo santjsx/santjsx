@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" width="100%">
 
   <defs>
     <!-- Terminal drop shadow -->
@@ -6,51 +6,39 @@
       <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
 
-    <!-- Soft ambient glow behind terminal -->
+    <!-- Soft ambient glow backdrop -->
     <radialGradient id="ambientGlow" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#1a1b26" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Title bar gradient -->
-    <linearGradient id="titleBarGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#292e42"/>
-      <stop offset="100%" stop-color="#24283b"/>
+    <!-- Conic Avatar Ring gradient (approximated via linear) -->
+    <linearGradient id="avatarGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="35%" stop-color="#60a5fa"/>
+      <stop offset="70%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
 
-    <!-- Status bar gradient -->
-    <linearGradient id="statusBarGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1f2335"/>
-      <stop offset="100%" stop-color="#1a1b26"/>
-    </linearGradient>
-
-    <!-- Scanline pattern -->
-    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="transparent"/>
-      <rect y="2" width="4" height="2" fill="#ffffff" opacity="0.012"/>
+    <!-- Grid background pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="40" stroke="rgba(255,255,255,0.015)" stroke-width="1"/>
     </pattern>
+
+    <!-- Noise filter -->
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.03 0" in="noise" result="coloredNoise"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
 
     <!-- Gutter separator gradient -->
     <linearGradient id="gutterLine" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#30363d" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#30363d" stop-opacity="0.6"/>
-      <stop offset="85%" stop-color="#30363d" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#30363d" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Green status pulse glow -->
-    <filter id="pulseGlow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Stat bar progress animation -->
-    <linearGradient id="statsBarGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7aa2f7"/>
-      <stop offset="100%" stop-color="#9ece6a"/>
+      <stop offset="0%" stop-color="#1e1e2e" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#1e1e2e" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#1e1e2e" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1e1e2e" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Gmail Gradient A -->
@@ -1246,36 +1234,29 @@
 <stop offset="1" stop-color="#512D00"/>
 </linearGradient>
 
-<linearGradient gradientUnits="userSpaceOnUse" id="next_paint0" x1="109" x2="144.5" y1="116.5" y2="160.5"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="next_paint1" x1="121" x2="120.799" y1="54" y2="106.875"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient>
+    <!-- Next.js Gradients -->
+    <linearGradient gradientUnits="userSpaceOnUse" id="next_paint0" x1="109" x2="144.5" y1="116.5" y2="160.5">
+      <stop stop-color="white"></stop>
+      <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" id="next_paint1" x1="121" x2="120.799" y1="54" y2="106.875">
+      <stop stop-color="white"></stop>
+      <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+    </linearGradient>
+
   </defs>
 
   <style>
-    /* ── Typing animation for whoami ── */
-    @keyframes typing {
-      0%   { x: 36px }
-      35%  { x: 155px }
-      100% { x: 155px }
-    }
-    /* ── Live-typing animation for active prompt ── */
-    @keyframes typing-prompt {
-      0%, 15%   { x: 108px; }
-      70%, 85%  { x: 168px; }
-      95%, 100% { x: 108px; }
-    }
+    /* ── Font Family Stacks ── */
+    .font-sans { font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', Consolas, "Fira Code", "SF Mono", monospace; }
+
+    /* ── Blinking Cursor ── */
     @keyframes blink {
       0%, 100% { opacity: 1 }
       50% { opacity: 0 }
     }
-    .typing-mask { animation: typing 3.5s steps(14) infinite }
-    .prompt-mask { animation: typing-prompt 5s steps(7) infinite }
-    
-    /* ── Blinking Cursor Movement Animation ── */
-    @keyframes cursor-move {
-      0%, 15%   { transform: translateX(108px); }
-      70%, 85%  { transform: translateX(166px); }
-      95%, 100% { transform: translateX(108px); }
-    }
-    .cursor-animation { animation: cursor-move 5s steps(7) infinite, blink 1.1s step-end infinite; }
+    .cursor { animation: blink 1.1s step-end infinite; }
 
     /* ── Status bar green dot pulse ── */
     @keyframes statusPulse {
@@ -1283,17 +1264,11 @@
       50% { opacity: 0.5; r: 4.5 }
     }
     .status-dot { animation: statusPulse 2.5s ease-in-out infinite }
+    .online-dot { animation: statusPulse 2s ease-in-out infinite }
 
-    /* ── Stats Card Progress Bar Animation ── */
-    @keyframes progressDraw {
-      0% { width: 0; }
-      100% { width: 141px; }
-    }
-    .progress-fill { animation: progressDraw 2s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
-
-    /* ── Interactive Skill Hover ── */
-    .skill-label { transition: fill 0.2s ease; }
-    a:hover .skill-label { fill: #7aa2f7 !important; }
+    /* ── Interactive Hover ── */
+    .sk { transition: opacity 0.2s; }
+    .sk:hover { opacity: 0.85; }
 
     /* ── Emoji Shuffling Animations (14 Emojis, 7s cycle) ── */
     @keyframes shuffle-weary {
@@ -1384,143 +1359,238 @@
 
 
   <!-- Ambient glow backdrop -->
-  <rect width="880" height="440" rx="12" fill="url(#ambientGlow)"/>
+  <rect width="860" height="660" rx="16" fill="url(#ambientGlow)"/>
 
-  <!-- Main terminal body with shadow -->
-  <g filter="url(#termShadow)">
-    <rect x="2" y="2" width="876" height="436" rx="12" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
-  </g>
+  <!-- Grid Background -->
+  <rect x="2" y="2" width="856" height="656" rx="16" fill="url(#gridPattern)"/>
 
-  <!-- Title bar background -->
-  <rect x="2" y="2" width="876" height="38" rx="12" fill="url(#titleBarGrad)"/>
-  <rect x="2" y="28" width="876" height="12" fill="#24283b"/>
+  <!-- Main container border -->
+  <rect x="2" y="2" width="856" height="656" rx="16" fill="none" stroke="#1e1e2e" stroke-width="1"/>
 
-  <!-- macOS Traffic Lights -->
-  <circle cx="24" cy="21" r="6" fill="#ff5f57"/>
-  <circle cx="44" cy="21" r="6" fill="#febc2e"/>
-  <circle cx="64" cy="21" r="6" fill="#28c840"/>
+  <!-- Noise Overlay -->
+  <rect x="2" y="2" width="856" height="656" rx="16" fill="none" filter="url(#noiseFilter)" opacity="0.3" pointer-events="none"/>
 
-  <!-- Centered tab title -->
-  <text x="440" y="25" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" fill="#565f89" text-anchor="middle" letter-spacing="0.5">
-    <tspan fill="#7aa2f7">⬡</tspan>  santhosh_reddy — zsh
-  </text>
+  <!-- ── HEADER SECTION ── -->
+  <!-- Avatar Ring -->
+  <circle cx="72" cy="68" r="36" fill="url(#avatarGrad)"/>
+  <circle cx="72" cy="68" r="34" fill="#0a0a0f"/>
+  <text x="72" y="75" class="font-mono" font-size="22" font-weight="500" fill="#a78bfa" text-anchor="middle" letter-spacing="-1">SR</text>
 
-  <!-- Subtle bottom border for title bar -->
-  <line x1="2" y1="40" x2="878" y2="40" stroke="#30363d" stroke-width="0.5"/>
-
-  <!-- Left Column: Command 1: whoami -->
-  <text x="36" y="76" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="13.5" fill="#7aa2f7">
-    <tspan fill="#bb9af7">❯</tspan><tspan fill="#3b4261"> </tspan><tspan fill="#9ece6a">~</tspan><tspan fill="#3b4261">/</tspan><tspan fill="#7dcfff">dev</tspan><tspan fill="#565f89"> </tspan><tspan fill="#c0caf5">whoami</tspan>
-  </text>
-
-  <!-- Typing name -->
-  <g>
-    <text x="36" y="104" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="13.5" fill="#9ece6a" font-weight="bold" letter-spacing="0.5">santhosh_reddy</text>
-    <rect x="36" y="90" height="18" width="200" fill="#1a1b26" class="typing-mask"/>
-  </g>
-  <rect x="156" y="91" width="2" height="16" rx="1" fill="#c0caf5" class="cursor-blink"/>
-
-  <!-- Left Column: Command 2: cat about.txt -->
-  <text x="36" y="146" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="13.5">
-    <tspan fill="#bb9af7">❯</tspan><tspan fill="#3b4261"> </tspan><tspan fill="#9ece6a">~</tspan><tspan fill="#3b4261">/</tspan><tspan fill="#7dcfff">dev</tspan><tspan fill="#565f89"> </tspan><tspan fill="#f7768e">cat</tspan><tspan fill="#c0caf5"> about.txt</tspan>
-  </text>
-  <text x="36" y="174" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12.5" fill="#c0caf5" letter-spacing="0.2">Full-Stack Developer &amp; AI Enthusiast.</text>
-  <text x="36" y="198" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12.5" fill="#c0caf5" letter-spacing="0.2">Building performant, intelligent web experiences.</text>
-
-  <!-- Left Column: Command 3: ls skills/ -->
-  <text x="36" y="240" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="13.5">
-    <tspan fill="#bb9af7">❯</tspan><tspan fill="#3b4261"> </tspan><tspan fill="#9ece6a">~</tspan><tspan fill="#3b4261">/</tspan><tspan fill="#7dcfff">dev</tspan><tspan fill="#565f89"> </tspan><tspan fill="#f7768e">ls</tspan><tspan fill="#c0caf5"> skills/</tspan>
-  </text>
+  <!-- Name Block -->
+  <text x="122" y="58" class="font-sans" font-size="26" font-weight="700" fill="#f1f0ff" letter-spacing="-0.5">santhosh_reddy</text>
   
-  <!-- Rendered Skills with Clickable Icons -->
-    <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Ahtml" target="_blank" style="cursor: pointer;">
-    <g transform="translate(36, 258) scale(0.0269)">
+  <!-- Online Pill -->
+  <rect x="318" y="42" width="84" height="20" rx="10" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.25)" stroke-width="1"/>
+  <circle cx="330" cy="52" r="3" fill="#34d399" class="online-dot"/>
+  <text x="340" y="56" class="font-mono" font-size="11" fill="#34d399" font-weight="500">available</text>
+
+  <!-- Tagline -->
+  <text x="122" y="82" class="font-sans" font-size="14" fill="#6b7280" font-weight="400" line-height="1.5">
+    Full-stack developer <tspan fill="#a78bfa">&amp;</tspan> AI enthusiast
+  </text>
+  <text x="122" y="100" class="font-sans" font-size="14" fill="#6b7280" font-weight="400">
+    Building performant, intelligent web experiences.
+  </text>
+
+  <!-- Badges Row -->
+  <!-- Badge 1: # full-stack -->
+  <rect x="122" y="118" width="90" height="18" rx="4" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="128" y="131" class="font-mono" font-size="10" fill="#a78bfa"># full-stack</text>
+
+  <!-- Badge 2: # ai-enthusiast -->
+  <rect x="218" y="118" width="104" height="18" rx="4" fill="rgba(96,165,250,0.12)" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+  <text x="224" y="131" class="font-mono" font-size="10" fill="#60a5fa"># ai-enthusiast</text>
+
+  <!-- Badge 3: # open-source -->
+  <rect x="328" y="118" width="96" height="18" rx="4" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+  <text x="334" y="131" class="font-mono" font-size="10" fill="#34d399"># open-source</text>
+
+  <!-- Badge 4: # next.js -->
+  <rect x="430" y="118" width="70" height="18" rx="4" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="436" y="131" class="font-mono" font-size="10" fill="#a78bfa"># next.js</text>
+
+  <!-- Header Right (Stats Pill) -->
+  <rect x="580" y="44" width="244" height="48" rx="10" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+  
+  <!-- Projects Stat -->
+  <text x="615" y="66" class="font-sans" font-size="18" font-weight="700" fill="#f1f0ff" text-anchor="middle">12</text>
+  <text x="615" y="80" class="font-mono" font-size="10" fill="#4b5563" text-anchor="middle">projects</text>
+
+  <!-- Divider 1 -->
+  <line x1="650" y1="54" x2="650" y2="82" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Commits Stat -->
+  <text x="702" y="66" class="font-sans" font-size="18" font-weight="700" fill="#f1f0ff" text-anchor="middle">340</text>
+  <text x="702" y="80" class="font-mono" font-size="10" fill="#4b5563" text-anchor="middle">commits</text>
+
+  <!-- Divider 2 -->
+  <line x1="754" y1="54" x2="754" y2="82" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Exp Stat -->
+  <text x="790" y="66" class="font-sans" font-size="18" font-weight="700" fill="#f1f0ff" text-anchor="middle">3</text>
+  <text x="790" y="80" class="font-mono" font-size="10" fill="#4b5563" text-anchor="middle">years exp</text>
+
+  <!-- Header Divider -->
+  <line x1="2" y1="154" x2="858" y2="154" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- ── MAIN GRID ── -->
+  <!-- Vertical Gutter Divider -->
+  <line x1="580" y1="154" x2="580" y2="548" stroke="url(#gutterLine)" stroke-width="1"/>
+
+  <!-- ── LEFT COLUMN ── -->
+  <!-- Section Label: Terminal -->
+  <text x="36" y="184" class="font-mono" font-size="10" fill="#374151" letter-spacing="1.2"><tspan fill="#6366f1">//</tspan> TERMINAL</text>
+
+  <!-- Terminal Block -->
+  <rect x="36" y="196" width="508" height="144" rx="10" fill="rgba(255,255,255,0.02)" stroke="#1e1e2e" stroke-width="1"/>
+  
+  <!-- macOS dots -->
+  <circle cx="54" cy="211" r="4" fill="#ff5f57"/>
+  <circle cx="66" cy="211" r="4" fill="#febc2e"/>
+  <circle cx="78" cy="211" r="4" fill="#28c840"/>
+  <text x="94" y="214" class="font-mono" font-size="10" fill="#374151" letter-spacing="0.5">~/dev/santhosh_reddy</text>
+
+  <!-- Terminal Lines -->
+  <text x="54" y="238" class="font-mono" font-size="12" fill="#6366f1">❯ <tspan fill="#60a5fa">cat about.json</tspan></text>
+  
+  <!-- JSON Output -->
+  <text x="54" y="254" class="font-mono" font-size="11.5" fill="#9ca3af">{</text>
+  <text x="70" y="270" class="font-mono" font-size="11.5" fill="#9ca3af">  <tspan fill="#a78bfa">"role"</tspan>: <tspan fill="#34d399">"Full-Stack Developer"</tspan>,</text>
+  <text x="70" y="286" class="font-mono" font-size="11.5" fill="#9ca3af">  <tspan fill="#a78bfa">"focus"</tspan>: <tspan fill="#34d399">"AI-powered web apps"</tspan>,</text>
+  <text x="70" y="302" class="font-mono" font-size="11.5" fill="#9ca3af">  <tspan fill="#a78bfa">"status"</tspan>: <tspan fill="#fbbf24">"open to collab"</tspan></text>
+  <text x="54" y="318" class="font-mono" font-size="11.5" fill="#9ca3af">}</text>
+
+  <!-- Next Prompt -->
+  <text x="54" y="332" class="font-mono" font-size="12" fill="#6366f1">❯</text>
+  <rect x="66" y="321" width="7" height="13" fill="#6366f1" class="cursor"/>
+
+  <!-- Section Label: Stack -->
+  <text x="36" y="368" class="font-mono" font-size="10" fill="#374151" letter-spacing="1.2"><tspan fill="#6366f1">//</tspan> STACK</text>
+
+  <!-- Skills badges (using real vector SVGs) -->
+    <g class="sk">
+    <rect x="36" y="378" width="74" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(44, 384) scale(0.0269)">
       <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" /><path fill="#ef652a" d="M226 472l149-41 35-394H226" /><path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/><path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
     </g>
-    <text x="54" y="269.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">HTML</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Acss" target="_blank" style="cursor: pointer;">
-    <g transform="translate(116, 258) scale(0.1094)">
+    <text x="62" y="395" class="font-mono" font-size="11.5" fill="#9ca3af">HTML</text>
+  </g>\n  <g class="sk">
+    <rect x="117" y="378" width="66" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(118, 384) scale(0.1094)">
       <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/>
     </g>
-    <text x="134" y="269.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">CSS</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Ajavascript" target="_blank" style="cursor: pointer;">
-    <g transform="translate(186, 258) scale(0.0133)">
+    <text x="136" y="395" class="font-mono" font-size="11.5" fill="#9ca3af">CSS</text>
+  </g>\n  <g class="sk">
+    <rect x="190" y="378" width="112" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(191, 384) scale(0.0133)">
       <path fill="#f0db4f" d="M0 0h1052v1052H0z"/><path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"/>
     </g>
-    <text x="204" y="269.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">JavaScript</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Areact" target="_blank" style="cursor: pointer;">
-    <g transform="translate(310, 258) scale(0.0273)">
+    <text x="209" y="395" class="font-mono" font-size="11.5" fill="#9ca3af">JavaScript</text>
+  </g>\n  <g class="sk">
+    <rect x="309" y="378" width="78" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(311, 384) scale(0.0273)">
       <g fill="none" fill-rule="evenodd"><g transform="translate(-227, -256)" fill="#58C4DC" fill-rule="nonzero"><g transform="translate(227, 256)"><path d="M285.5,201 C255.400481,201 C231,225.400481 231,255.5 C231,285.599519 255.400481,310 285.5,310 C315.599519,310 340,285.599519 340,255.5 C340,225.400481 315.599519,201 285.5,201" id="Path"></path><path d="M568.959856,255.99437 C568.959856,213.207656 529.337802,175.68144 466.251623,150.985214 C467.094645,145.423543 467.85738,139.922107 468.399323,134.521063 C474.621631,73.0415145 459.808523,28.6686204 426.709856,9.5541429 C389.677085,-11.8291748 337.36955,3.69129898 284.479928,46.0162134 C231.590306,3.69129898 179.282771,-11.8291748 142.25,9.5541429 C109.151333,28.6686204 94.3382249,73.0415145 100.560533,134.521063 C101.102476,139.922107 101.845139,145.443621 102.708233,151.02537 C97.4493791,153.033193 92.2908847,155.161486 87.3331099,157.39017 C31.0111824,182.708821 0,217.765415 0,255.99437 C0,298.781084 39.6220545,336.307301 102.708233,361.003527 C101.845139,366.565197 101.102476,372.066633 100.560533,377.467678 C94.3382249,438.947226 109.151333,483.32012 142.25,502.434597 C153.629683,508.887578 166.52439,512.186771 179.603923,511.991836 C210.956328,511.991836 247.567589,495.487529 284.479928,465.972527 C321.372196,495.487529 358.003528,511.991836 389.396077,511.991836 C402.475265,512.183856 415.36922,508.884856 426.75,502.434597 C459.848667,483.32012 474.661775,438.947226 468.439467,377.467678 C467.897524,372.066633 467.134789,366.565197 466.291767,361.003527 C529.377946,336.347457 569,298.761006 569,255.99437 M389.155214,27.1025182 C397.565154,26.899606 405.877839,28.9368502 413.241569,33.0055186 C436.223966,46.2772304 446.540955,82.2775015 441.522965,131.770345 C441.181741,135.143488 440.780302,138.556788 440.298575,141.990165 C414.066922,134.08804 387.205771,128.452154 360.010724,125.144528 C343.525021,103.224055 325.192524,82.7564475 305.214266,63.9661533 C336.586743,39.7116483 366.032313,27.1025182 389.135142,27.1025182 M378.356498,310.205598 C368.204912,327.830733 357.150626,344.919965 345.237759,361.405091 C325.045049,363.479997 304.758818,364.51205 284.459856,364.497299 C264.167589,364.51136 243.888075,363.479308 223.702025,361.405091 C211.820914,344.919381 200.80007,327.83006 190.683646,310.205598 C180.532593,292.629285 171.306974,274.534187 163.044553,255.99437 C171.306974,237.454554 180.532593,219.359455 190.683646,201.783142 C200.784121,184.229367 211.770999,167.201087 223.601665,150.764353 C243.824636,148.63809 264.145559,147.579168 284.479928,147.591877 C304.772146,147.579725 325.051559,148.611772 345.237759,150.68404 C357.109048,167.14607 368.136094,184.201112 378.27621,201.783142 C388.419418,219.363718 397.644825,237.458403 405.915303,255.99437 C397.644825,274.530337 388.419418,292.625022 378.27621,310.205598 M419.724813,290.127366 C426.09516,307.503536 431.324985,325.277083 435.380944,343.334682 C417.779633,348.823635 399.836793,353.149774 381.668372,356.285142 C388.573127,345.871232 395.263781,335.035679 401.740334,323.778483 C408.143291,312.655143 414.144807,301.431411 419.805101,290.207679 M246.363271,390.377981 C258.848032,391.140954 271.593728,391.582675 284.5,391.582675 C297.406272,391.582675 310.232256,391.140954 322.737089,390.377981 C310.880643,404.583418 298.10766,417.997563 284.5,430.534446 C270.921643,417.999548 258.18192,404.585125 246.363271,390.377981 Z M187.311556,356.244986 C169.137286,353.123646 151.187726,348.810918 133.578912,343.334682 C137.618549,325.305649 142.828222,307.559058 149.174827,290.207679 C154.754833,301.431411 160.736278,312.655143 167.239594,323.778483 C173.74291,334.901824 180.467017,345.864539 187.311556,356.285142 M149.174827,221.760984 C142.850954,204.473938 137.654787,186.794745 133.619056,168.834762 C151.18418,163.352378 169.085653,159.013101 187.211197,155.844146 C180.346585,166.224592 173.622478,176.986525 167.139234,188.210257 C160.65599,199.433989 154.734761,210.517173 149.074467,221.760984 M322.616657,121.590681 C310.131896,120.827708 297.3862,120.385987 284.379568,120.385987 C271.479987,120.385987 258.767744,120.787552 246.242839,121.590681 C258.061488,107.383537 270.801211,93.9691137 284.379568,81.4342157 C297.99241,93.9658277 310.765727,107.380324 322.616657,121.590681 Z M401.70019,188.210257 C395.196875,176.939676 388.472767,166.09743 381.527868,155.68352 C399.744224,158.819049 417.734224,163.151949 435.380944,168.654058 C431.331963,186.680673 426.122466,204.426664 419.785029,221.781062 C414.205023,210.55733 408.203506,199.333598 401.720262,188.230335 M127.517179,131.790423 C122.438973,82.3176579 132.816178,46.2973086 155.778503,33.0255968 C163.144699,28.9632474 171.455651,26.9264282 179.864858,27.1225964 C202.967687,27.1225964 232.413257,39.7317265 263.785734,63.9862316 C243.794133,82.7898734 225.448298,103.270812 208.949132,125.204763 C181.761691,128.528025 154.90355,134.14313 128.661281,141.990165 C128.199626,138.556788 127.778115,135.163566 127.456963,131.790423 M98.4529773,182.106474 C101.54406,180.767925 104.695358,179.429376 107.906872,178.090828 C114.220532,204.735668 122.781793,230.7969 133.498624,255.99437 C122.761529,281.241316 114.193296,307.357063 107.8868,334.058539 C56.7434387,313.076786 27.0971497,284.003505 27.0971497,255.99437 C27.0971497,229.450947 53.1907013,202.526037 98.4529773,182.106474 Z M155.778503,478.963143 C132.816178,465.691432 122.438973,429.671082 127.517179,380.198317 C127.838331,376.825174 128.259842,373.431953 128.721497,369.978497 C154.953686,377.878517 181.814655,383.514365 209.009348,386.824134 C225.500295,408.752719 243.832321,429.233234 263.805806,448.042665 C220.069,481.834331 180.105722,492.97775 155.838719,478.963143 M441.502893,380.198317 C446.520883,429.691161 436.203894,465.691432 413.221497,478.963143 C388.974566,493.017906 348.991216,481.834331 305.274481,448.042665 C325.241364,429.232737 343.566681,408.752215 360.050868,386.824134 C387.245915,383.516508 414.107066,377.880622 440.338719,369.978497 C440.820446,373.431953 441.221885,376.825174 441.563109,380.198317 M461.193488,334.018382 C454.869166,307.332523 446.294494,281.231049 435.561592,255.99437 C446.289797,230.744081 454.857778,204.629101 461.173416,177.930202 C512.216417,198.911955 541.942994,227.985236 541.942994,255.99437 C541.942994,284.003505 512.296705,313.076786 461.153344,334.058539" id="Shape"></path></g></g></g>
     </g>
-    <text x="329" y="269.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">React</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Anextjs" target="_blank" style="cursor: pointer;">
-    <g transform="translate(36, 282) scale(0.0777)">
-      <mask height="180" id="next_mask" maskUnits="userSpaceOnUse" width="180" x="0" y="0" style="mask-type: alpha;"><circle cx="90" cy="90" fill="black" r="90"></circle></mask><g mask="url(#next_mask)"><circle cx="90" cy="90" data-circle="true" fill="black" r="90"></circle><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#next_paint0)"></path><rect fill="url(#next_paint1)" height="72" width="12" x="115" y="54"></rect></g>
+    <text x="330" y="395" class="font-mono" font-size="11.5" fill="#9ca3af">React</text>
+  </g>\n  <g class="sk">
+    <rect x="394" y="378" width="86" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(398, 384) scale(0.0777)">
+      <mask height="180" id="next_mask" maskUnits="userSpaceOnUse" width="180" x="0" y="0" style="mask-type: alpha;"><circle cx="90" cy="90" fill="black" r="90"></circle></mask><g mask="url(#next_mask)"><circle cx="90" cy="90" fill="black" r="90"></circle><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#next_paint0)"></path><rect fill="url(#next_paint1)" height="72" width="12" x="115" y="54"></rect></g>
     </g>
-    <text x="54" y="293.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">Next.js</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Atypescript" target="_blank" style="cursor: pointer;">
-    <g transform="translate(146, 282) scale(0.0547)">
+    <text x="416" y="395" class="font-mono" font-size="11.5" fill="#9ca3af">Next.js</text>
+  </g>
+
+  <!-- Row 2 -->
+    <g class="sk">
+    <rect x="36" y="411" width="112" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(44, 417) scale(0.0547)">
       <path d="M20 0h216c11.046 0 20 8.954 20 20v216c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0Z" fill="#3178C6"/><path d="M150.518 200.475v27.62c4.492 2.302 9.805 4.028 15.938 5.179 6.133 1.151 12.597 1.726 19.393 1.726 6.622 0 12.914-.633 18.874-1.899 5.96-1.266 11.187-3.352 15.678-6.257 4.492-2.906 8.048-6.704 10.669-11.394 2.62-4.689 3.93-10.486 3.93-17.391 0-5.006-.749-9.394-2.246-13.163a30.748 30.748 0 0 0-6.479-10.055c-2.821-2.935-6.205-5.567-10.149-7.898-3.945-2.33-8.394-4.531-13.347-6.602-3.628-1.497-6.881-2.949-9.761-4.359-2.879-1.41-5.327-2.848-7.342-4.316-2.016-1.467-3.571-3.021-4.665-4.661-1.094-1.64-1.641-3.495-1.641-5.567 0-1.899.489-3.61 1.468-5.135s2.362-2.834 4.147-3.927c1.785-1.094 3.973-1.942 6.565-2.547 2.591-.604 5.471-.906 8.638-.906 2.304 0 4.737.173 7.299.518 2.563.345 5.14.877 7.732 1.597a53.669 53.669 0 0 1 7.558 2.719 41.7 41.7 0 0 1 6.781 3.797v-25.807c-4.204-1.611-8.797-2.805-13.778-3.582-4.981-.777-10.697-1.165-17.147-1.165-6.565 0-12.784.705-18.658 2.115-5.874 1.409-11.043 3.61-15.506 6.602-4.463 2.993-7.99 6.805-10.582 11.437-2.591 4.632-3.887 10.17-3.887 16.615 0 8.228 2.375 15.248 7.127 21.06 4.751 5.811 11.963 10.731 21.638 14.759a291.458 291.458 0 0 1 10.625 4.575c3.283 1.496 6.119 3.049 8.509 4.66 2.39 1.611 4.276 3.366 5.658 5.265 1.382 1.899 2.073 4.057 2.073 6.474a9.901 9.901 0 0 1-1.296 4.963c-.863 1.524-2.174 2.848-3.93 3.97-1.756 1.122-3.945 1.999-6.565 2.632-2.62.633-5.687.95-9.2.95-5.989 0-11.92-1.05-17.794-3.151-5.875-2.1-11.317-5.25-16.327-9.451Zm-46.036-68.733H140V109H41v22.742h35.345V233h28.137V131.742Z" fill="#FFF"/>
     </g>
-    <text x="164" y="293.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">TypeScript</text>
-  </a>\n  <a href="https://github.com/santjsx?tab=repositories&amp;q=topic%3Agit" target="_blank" style="cursor: pointer;">
-    <g transform="translate(276, 282) scale(0.0547)">
+    <text x="62" y="428" class="font-mono" font-size="11.5" fill="#9ca3af">TypeScript</text>
+  </g>\n  <g class="sk">
+    <rect x="155" y="411" width="60" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <g transform="translate(163, 417) scale(0.0547)">
       <path d="M251.17 116.6 139.4 4.82a16.49 16.49 0 0 0-23.31 0l-23.21 23.2 29.44 29.45a19.57 19.57 0 0 1 24.8 24.96l28.37 28.38a19.61 19.61 0 1 1-11.75 11.06L137.28 95.4v69.64a19.62 19.62 0 1 1-16.13-.57V94.2a19.61 19.61 0 0 1-10.65-25.73L81.46 39.44 4.83 116.08a16.49 16.49 0 0 0 0 23.32L116.6 251.17a16.49 16.49 0 0 0 23.32 0l111.25-111.25a16.5 16.5 0 0 0 0-23.33" fill="#DE4C36"/>
     </g>
-    <text x="294" y="293.5" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="12" fill="#c0caf5" font-weight="bold" class="skill-label">Git</text>
-  </a>
-
-  <!-- Left Column: Active prompt with live typing: 'contact' -->
-  <rect x="2" y="338" width="556" height="24" rx="0" fill="#1e2030" opacity="0.4"/>
-  
-  <g>
-    <!-- Prompt path + typed text -->
-    <text x="36" y="354" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="13.5">
-      <tspan fill="#bb9af7">❯</tspan><tspan fill="#3b4261"> </tspan><tspan fill="#9ece6a">~</tspan><tspan fill="#3b4261">/</tspan><tspan fill="#7dcfff">dev</tspan><tspan fill="#565f89"> </tspan><tspan fill="#c0caf5">contact</tspan>
-    </text>
-    
-    <!-- Typing mask for 'contact' (slides from x=108 to x=168) -->
-    <rect x="108" y="340" width="60" height="18" fill="#1a1b26" class="prompt-mask"/>
+    <text x="181" y="428" class="font-mono" font-size="11.5" fill="#9ca3af">Git</text>
   </g>
-  
-  <!-- Blinking cursor box that moves with the typed text -->
-  <rect x="0" y="341" width="8" height="16" fill="#c0caf5" class="cursor-animation"/>
 
-  <!-- Vertical separator -->
-  <line x1="560" y1="52" x2="560" y2="400" stroke="url(#gutterLine)" stroke-width="0.8"/>
+  <!-- AI / LLMs Badge -->
+  <g class="sk">
+    <rect x="222" y="411" width="96" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e" stroke-width="1"/>
+    <path d="M7 0L9.3 4.7L14 7L9.3 9.3L7 14L4.7 9.3L0 7L4.7 4.7z" fill="#a78bfa" transform="translate(230, 417)"/>
+    <text x="249" y="428" class="font-mono" font-size="11.5" fill="#9ca3af">AI / LLMs</text>
+  </g>
 
-  <!-- Right Column: Panel header (aligned vertically with whoami at y=76) -->
-  <text x="580" y="76" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" fill="#8990b3" font-weight="bold" letter-spacing="0.8">// connect</text>
-  <line x1="580" y1="84" x2="855" y2="84" stroke="#30363d" stroke-width="0.4"/>
+  <!-- Section Label: Recent Commits -->
+  <text x="36" y="462" class="font-mono" font-size="10" fill="#374151" letter-spacing="1.2"><tspan fill="#6366f1">//</tspan> RECENT COMMITS</text>
 
-  <!-- Gmail (aligned vertically, shifted up) -->
-  <g transform="translate(580, 96.5) scale(0.135)">
+  <!-- Commits list -->
+  <!-- Commit 1 -->
+  <text x="36" y="482" class="font-mono" font-size="11" fill="#6366f1">a3f1c2e</text>
+  <rect x="100" y="471" width="38" height="16" rx="3" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="106" y="483" class="font-mono" font-size="10" fill="#a78bfa">feat</text>
+  <text x="148" y="482" class="font-mono" font-size="11" fill="#6b7280">add AI chat interface with streaming</text>
+
+  <!-- Commit 2 -->
+  <text x="36" y="502" class="font-mono" font-size="11" fill="#6366f1">98d4b17</text>
+  <rect x="100" y="491" width="34" height="16" rx="3" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.2)" stroke-width="1"/>
+  <text x="106" y="503" class="font-mono" font-size="10" fill="#fbbf24">fix</text>
+  <text x="144" y="502" class="font-mono" font-size="11" fill="#6b7280">responsive nav breakpoints on mobile</text>
+
+  <!-- Commit 3 -->
+  <text x="36" y="522" class="font-mono" font-size="11" fill="#6366f1">c71a3d9</text>
+  <rect x="100" y="511" width="44" height="16" rx="3" fill="rgba(107,114,128,0.15)" stroke="rgba(107,114,128,0.2)" stroke-width="1"/>
+  <text x="106" y="523" class="font-mono" font-size="10" fill="#6b7280">chore</text>
+  <text x="154" y="522" class="font-mono" font-size="11" fill="#6b7280">upgrade to Next.js 15 and TypeScript 5.4</text>
+
+  <!-- Commit 4 -->
+  <text x="36" y="542" class="font-mono" font-size="11" fill="#6366f1">e02b5f1</text>
+  <rect x="100" y="531" width="38" height="16" rx="3" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.2)" stroke-width="1"/>
+  <text x="106" y="543" class="font-mono" font-size="10" fill="#a78bfa">feat</text>
+  <text x="148" y="542" class="font-mono" font-size="11" fill="#6b7280">integrate OpenAI function calling</text>
+
+
+  <!-- ── RIGHT COLUMN ── -->
+  <!-- Section Label: Connect -->
+  <text x="604" y="184" class="font-mono" font-size="10" fill="#374151" letter-spacing="1.2"><tspan fill="#6366f1">//</tspan> CONNECT</text>
+
+  <!-- Connect Row 1 (Gmail) -->
+  <rect x="604" y="196" width="28" height="28" rx="7" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e"/>
+  <g transform="translate(609, 204) scale(0.09)">
     <path fill="url(#gmailGradA)" d="M146 44h38v110c0 6.627-5.373 12-12 12h-20a6 6 0 0 1-6-6z"/>
     <path fill="#fc413d" d="M46 44H8v110c0 6.627 5.373 12 12 12h20a6 6 0 0 0 6-6z"/>
     <path fill="url(#gmailGradB)" d="M39.226 30.456c-8.033-6.752-20.018-5.714-26.77 2.319-6.752 8.032-5.714 20.017 2.319 26.77l76.078 63.949a8 8 0 0 0 10.295 0l76.078-63.95c8.032-6.752 9.07-18.737 2.318-26.77-6.752-8.032-18.737-9.07-26.769-2.318L96 78.18z"/>
   </g>
-  <text x="616" y="114" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#c0caf5">heysanthoshreddy@gmail.com</text>
+  <text x="642" y="208" class="font-mono" font-size="10.5" fill="#c0caf5">heysanthoshreddy</text>
+  <text x="642" y="220" class="font-mono" font-size="9" fill="#374151">@gmail.com</text>
 
-  <!-- X / Twitter (official) -->
-  <g transform="translate(581, 131.5) scale(0.833)">
-    <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" fill="#c0caf5"/>
-  </g>
-  <text x="616" y="148" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#c0caf5">@Santhoshh_void</text>
+  <!-- Connect Row 2 (X) -->
+  <rect x="604" y="232" width="28" height="28" rx="7" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e"/>
+  <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" fill="#e1e1e1" transform="translate(611, 239) scale(0.583)"/>
+  <text x="642" y="244" class="font-mono" font-size="10.5" fill="#c0caf5">@Santhoshh_void</text>
+  <text x="642" y="256" class="font-mono" font-size="9" fill="#374151">twitter / x</text>
 
-  <!-- Discord (official Clyde logo) -->
-  <g transform="translate(580, 166) scale(0.095)">
-    <path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"/>
-  </g>
-  <text x="616" y="180" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#c0caf5">santjsx</text>
+  <!-- Connect Row 3 (Discord) -->
+  <rect x="604" y="268" width="28" height="28" rx="7" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e"/>
+  <path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2" transform="translate(610.5, 274.5) scale(0.068)"/>
+  <text x="642" y="280" class="font-mono" font-size="10.5" fill="#c0caf5">santjsx</text>
+  <text x="642" y="292" class="font-mono" font-size="9" fill="#374151">discord</text>
 
-  <!-- LinkedIn -->
-  <g transform="translate(580, 199.5) scale(0.09375)">
-    <path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2"/>
-  </g>
-  <text x="616" y="213" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#c0caf5">santhosh-reddy</text>
+  <!-- Connect Row 4 (LinkedIn) -->
+  <rect x="604" y="304" width="28" height="28" rx="7" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e"/>
+  <path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0A66C2" transform="translate(610.5, 310.5) scale(0.058)"/>
+  <text x="642" y="316" class="font-mono" font-size="10.5" fill="#c0caf5">santhosh-reddy</text>
+  <text x="642" y="328" class="font-mono" font-size="9" fill="#374151">linkedin</text>
 
-  <!-- GitHub (shuffling emojis) -->
-  <g transform="translate(578.5, 232) scale(0.375)">
+  <!-- Connect Row 5 (GitHub + Shuffling Emojis) -->
+  <rect x="604" y="340" width="28" height="28" rx="7" fill="rgba(255,255,255,0.03)" stroke="#1e1e2e"/>
+  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z" fill="#f1f0ff" transform="translate(610.5, 346.5) scale(0.625)"/>
+  <text x="642" y="352" class="font-mono" font-size="10.5" fill="#c0caf5">santjsx</text>
+  <text x="642" y="364" class="font-mono" font-size="9" fill="#374151">github</text>
+
+  <!-- Shuffling Emojis next to GH handle -->
+  <g transform="translate(694, 342) scale(0.375)">
 
     <!-- Weary Face -->
     <g class="emoji-weary">
@@ -1837,59 +1907,101 @@
 <path d="M57.3337 48.1524C57.448 49.2762 57.3146 50.9905 56.2099 53.2C53.4289 58.8191 45.9623 53.7143 40.667 54.0572C32.1147 54.6286 34.3813 58.381 27.2956 58.381C24.4385 58.381 21.7147 55.7143 21.2575 53.1238C21.2194 52.9143 21.0861 52.7238 20.9147 52.6096C20.7623 52.5143 20.5527 52.5905 20.4956 52.7619C20.7432 52.9905 20.9908 53.4286 21.1242 54.0572C21.448 55.4286 23.2194 58.9334 27.6004 58.9334C34.267 58.9334 34.667 55.1048 39.9813 54.781C44.0004 54.5334 47.0861 56.6476 52.1718 56.6476C57.7908 56.6476 57.7527 50.1143 58.0385 47.8286C57.8099 47.5429 57.2956 47.7524 57.3337 48.1524Z" fill="url(#woozy_paint11_linear)"/>
     </g>
   </g>
-  <text x="616" y="246" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#c0caf5">santjsx</text>
 
-  <!-- Right Column: GitHub Stats Card -->
-  <text x="580" y="278" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10.5" fill="#8990b3" font-weight="bold" letter-spacing="0.8">// github stats</text>
-  
-  <!-- Stats Card Container -->
-  <rect x="580" y="286" width="275" height="114" rx="8" fill="#1e2030" stroke="#3b4261" stroke-width="1" opacity="0.85"/>
-  
-  <!-- Stats Card Content -->
-  <text x="595" y="306" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11.5" font-weight="bold" fill="#7aa2f7">@santjsx</text>
-  
-  <!-- Column 1 -->
-  <text x="595" y="332" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#9ece6a">⚡ <tspan fill="#c0caf5">Commits: 1.8k</tspan></text>
-  <text x="595" y="354" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#e0af68">★ <tspan fill="#c0caf5">Stars: 142</tspan></text>
+  <!-- Section Label: Activity -->
+  <text x="604" y="398" class="font-mono" font-size="10" fill="#374151" letter-spacing="1.2"><tspan fill="#6366f1">//</tspan> ACTIVITY</text>
 
-  <!-- Column 2 -->
-  <text x="725" y="332" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#bb9af7">⎇ <tspan fill="#c0caf5">PRs: 94</tspan></text>
-  <text x="725" y="354" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="11" fill="#7dcfff">◈ <tspan fill="#c0caf5">Forks: 24</tspan></text>
+  <!-- Heatmap Grid (13 columns, 4 rows of 12x12 squares, gap 3) -->
+  <g transform="translate(604, 408)">
+    <!-- Row 0 -->
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="15" y="0" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="30" y="0" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="45" y="0" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="60" y="0" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="75" y="0" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="90" y="0" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="105" y="0" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="120" y="0" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="135" y="0" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="150" y="0" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="165" y="0" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="180" y="0" width="12" height="12" rx="2" fill="#312e81"/>
 
-  <!-- Contribution Rate Progress Bar -->
-  <text x="595" y="382" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#a9b1d6">Activity: 92%</text>
-  <rect x="685" y="375" width="155" height="7" rx="3.5" fill="#24283b" stroke="#3b4261" stroke-width="0.5"/>
-  <rect x="686" y="376" width="141" height="5" rx="2.5" fill="url(#statsBarGrad)" class="progress-fill"/>
+    <!-- Row 1 -->
+    <rect x="0" y="15" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="15" y="15" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="30" y="15" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="45" y="15" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="60" y="15" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="75" y="15" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="90" y="15" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="105" y="15" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="120" y="15" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="135" y="15" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="150" y="15" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="165" y="15" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="180" y="15" width="12" height="12" rx="2" fill="#312e81"/>
 
-  <!-- Status bar background -->
-  <rect x="2" y="414" width="876" height="24" rx="0" fill="url(#statusBarGrad)"/>
-  <!-- Bottom rounded corners overlay -->
-  <rect x="2" y="414" width="876" height="24" rx="12" fill="url(#statusBarGrad)"/>
-  <rect x="2" y="414" width="876" height="12" fill="url(#statusBarGrad)"/>
-  <!-- Top border -->
-  <line x1="2" y1="414" x2="878" y2="414" stroke="#30363d" stroke-width="0.5"/>
+    <!-- Row 2 -->
+    <rect x="0" y="30" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="15" y="30" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="30" y="30" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="45" y="30" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="60" y="30" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="75" y="30" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="90" y="30" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="105" y="30" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="120" y="30" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="135" y="30" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="150" y="30" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="165" y="30" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="180" y="30" width="12" height="12" rx="2" fill="#4338ca"/>
 
-  <!-- Status items -->
-  <!-- Branch -->
-  <circle cx="18" cy="426" r="3" fill="#9ece6a" class="status-dot" filter="url(#pulseGlow)"/>
-  <text x="28" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#7aa2f7" letter-spacing="0.3">
-    <tspan fill="#9ece6a">⎇</tspan> main
-  </text>
+    <!-- Row 3 -->
+    <rect x="0" y="45" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="15" y="45" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="30" y="45" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="45" y="45" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="60" y="45" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="75" y="45" width="12" height="12" rx="2" fill="#312e81"/>
+    <rect x="90" y="45" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="105" y="45" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="120" y="45" width="12" height="12" rx="2" fill="#4338ca"/>
+    <rect x="135" y="45" width="12" height="12" rx="2" fill="#111118"/>
+    <rect x="150" y="45" width="12" height="12" rx="2" fill="#6366f1"/>
+    <rect x="165" y="45" width="12" height="12" rx="2" fill="#1e1b4b"/>
+    <rect x="180" y="45" width="12" height="12" rx="2" fill="#4338ca"/>
+  </g>
 
-  <!-- File info -->
-  <text x="100" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#565f89" letter-spacing="0.3">UTF-8</text>
+  <!-- Heatmap Legend -->
+  <g transform="translate(680, 474)">
+    <text x="0" y="8" class="font-mono" font-size="9" fill="#374151">less</text>
+    <rect x="28" y="0" width="8" height="8" rx="2" fill="#111118"/>
+    <rect x="39" y="0" width="8" height="8" rx="2" fill="#1e1b4b"/>
+    <rect x="50" y="0" width="8" height="8" rx="2" fill="#312e81"/>
+    <rect x="61" y="0" width="8" height="8" rx="2" fill="#4338ca"/>
+    <rect x="72" y="0" width="8" height="8" rx="2" fill="#6366f1"/>
+    <text x="86" y="8" class="font-mono" font-size="9" fill="#374151">more</text>
+  </g>
 
-  <!-- Line/Col -->
-  <text x="160" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#565f89" letter-spacing="0.3">Ln 13, Col 1</text>
+  <!-- ── NOW BAR ── -->
+  <rect x="36" y="564" width="788" height="32" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <circle cx="50" cy="580" r="4" fill="#6366f1" class="online-dot"/>
+  <text x="64" y="584" class="font-mono" font-size="11" fill="#6366f1">currently building <tspan fill="#a78bfa">AI productivity tool</tspan> — next.js + openai</text>
+  <text x="808" y="585" class="font-sans" font-size="14" fill="#374151" text-anchor="end">→</text>
 
-  <!-- Right side status -->
-  <text x="750" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#565f89" text-anchor="end" letter-spacing="0.3">zsh</text>
+  <!-- Footer Divider -->
+  <line x1="2" y1="616" x2="858" y2="616" stroke="#1e1e2e" stroke-width="1"/>
 
-  <text x="790" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#3b4261" letter-spacing="0.3">|</text>
+  <!-- ── FOOTER ── -->
+  <!-- Left Side -->
+  <circle cx="42" cy="632" r="3.5" fill="#6366f1"/>
+  <text x="52" y="636" class="font-mono" font-size="10" fill="#374151">main</text>
+  <text x="102" y="636" class="font-mono" font-size="10" fill="#374151">UTF-8</text>
+  <text x="162" y="636" class="font-mono" font-size="10" fill="#374151">node <tspan fill="#6366f1">v22</tspan></text>
 
-  <text x="810" y="429" font-family="Consolas, 'Fira Code', 'JetBrains Mono', 'SF Mono', monospace" font-size="10" fill="#565f89" letter-spacing="0.3">⚡ node v22</text>
-
-  <!-- SCANLINE OVERLAY -->
-  <rect x="2" y="40" width="876" height="374" fill="url(#scanlines)" opacity="0.8"/>
+  <!-- Right Side -->
+  <text x="824" y="636" class="font-mono" font-size="10" fill="#374151" text-anchor="end"><tspan fill="#fbbf24">⚡</tspan> santhosh_reddy.dev — open to work</text>
 
 </svg>
