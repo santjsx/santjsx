@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.svg" alt="Santhosh Reddy — Terminal" width="100%" />
+  <img src="hero.svg?v=1" alt="Santhosh Reddy — Terminal" width="100%" />
 </p>
 
 <!-- streak: 1741458000 -->
